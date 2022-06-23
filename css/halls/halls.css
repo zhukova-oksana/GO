@@ -1,0 +1,48 @@
+.halls__title {
+  margin-bottom: 60px;
+}
+
+.list-halls {
+  display: inline-block;
+}
+
+.list-halls__item {
+  display: inline-block;
+  vertical-align: middle;
+  width: 580px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 1.143;
+  text-transform: uppercase;
+  padding: 135px 0 134px;
+  margin: 0 14px 20px 0;
+}
+
+.list-halls__item:nth-last-child(-n+2) {
+  margin-bottom: 0;
+}
+
+.list-halls__item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.list-halls__item_type_vibes {
+  background-image: url("img/hall-1.jpg");
+}
+
+.list-halls__item_type_star {
+  background-image: url("img/hall-2.jpg");
+}
+
+.list-halls__item_type_west {
+  background-image: url("img/hall-3.jpg");
+}
+
+.list-halls__item_type_neon {
+  background-image: url("img/hall-4.jpg");
+}
+
+.list-halls__name {
+  display: inline-block;
+}

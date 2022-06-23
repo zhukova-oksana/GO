@@ -1,0 +1,23 @@
+.promo {
+  padding-top: 146px;
+}
+
+.promo__container {
+  min-height: 823px;
+  background: url("img/promo.png") no-repeat right 30px bottom / auto 762px;
+  position: relative;
+}
+
+.promo__title {
+  font-weight: 900;
+  font-size: 150px;
+  line-height: 1;
+  letter-spacing: -0.1em;
+  margin-bottom: 0;
+}
+
+.promo__subtitle {
+  font-size: 28px;
+  line-height: 1.785714;
+  margin: 0 0 0 100px;
+}
