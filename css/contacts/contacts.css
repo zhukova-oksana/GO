@@ -98,3 +98,7 @@
 .design__paragraph:not(:last-child) {
   margin-bottom: 6px;
 }
+
+.contacts__image {
+  display: block;
+}

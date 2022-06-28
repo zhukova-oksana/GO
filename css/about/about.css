@@ -21,7 +21,6 @@
 }
 
 .quote {
-  text-align: right;
   margin: 0;
 }
 
@@ -72,8 +71,6 @@
 }
 
 .author__info {
-  display: inline-block;
-  vertical-align: middle;
   max-width: 289px;
   text-align: left;
 }
