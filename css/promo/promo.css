@@ -1,5 +1,5 @@
 .promo {
-  padding-top: 146px;
+  padding-top: 25px;
 }
 
 .promo__container {
@@ -19,5 +19,56 @@
 .promo__subtitle {
   font-size: 28px;
   line-height: 1.785714;
-  margin: 0 0 0 100px;
+  margin: 0 0 30px 100px;
+}
+
+.information {}
+
+.information__row {
+  display: flex;
+  gap: 43px;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 150px;
+}
+.information__item {
+  display: flex;
+  flex-basis: 161px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.information__button {
+  display: inline-flex;
+  background: #6C0287;
+  box-shadow: 0 0 20px #6C0287;
+  border-radius: 10px;
+}
+
+.information__link {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.1538461;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 25px 69px;
+  background: #6C0287;
+  border-radius: 10px;
+}
+
+.promo__arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 97px;
+  height: 97px;
+  border-radius: 50%;
+  border: 1px solid #FFFFFF;
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translate(-50%, 0);
 }

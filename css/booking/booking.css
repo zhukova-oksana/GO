@@ -1,55 +1,176 @@
 .booking {
+  background: #440F51;
+  padding: 80px 0;
 }
 
 .booking__title {
+
 }
 
 .form-booking {
 }
 
 .form-booking__fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0 0 60px;
 }
 
 .form-booking__legend {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .form-booking__label {
 }
 
 .form-booking__input {
+  width: 25px;
+  height: 25px;
+}
+
+.selection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.selection__text {
+  background: #FFFFFF;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 7px 15px 8px;
+  cursor: pointer;
+}
+
+.selection__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+.selection__input:checked + .selection__text {
+  background: #CD06FF;
+  color: #ffffff;
 }
 
 .set {
+  display: flex;
+  justify-content: space-between;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 100px;
+}
+
+.set__legend {
 }
 
 .set__item {
-
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 300px;
+  border: 0;
+  padding: 0;
 }
 
 .set__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
 }
 
 .set__label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 22px;
+  line-height: 1.13636363;
+  margin-bottom: 20px;
+}
+
+.set__label:last-child {
+  margin-bottom: 0;
 }
 
 .set__input {
+  width: 25px;
+  height: 25px;
 }
 
 .choice {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
 }
 
 .choice__item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 300px;
 }
 
 .choice__label {
+  font-size: 14px;
+  line-height: 1.14286;
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .choice__input {
+  border: 0;
+  padding: 12px 20px;
+  font-size: 18px;
+  line-height: 1.555556;
 }
 
-.choice__input_type_check {
+.choice__input:focus {
+  outline: 0;
 }
 
-.form-booking__submit {}
+.date-time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
-.form-booking__assent {}
+.date-time__label {
+  width: 134px;
+  display: flex;
+  flex-direction: column;
+}
+
+.date-time__input {
+  padding-right: 0;
+  padding-left: 10px;
+}
+
+.date-time__label:last-child {
+  width: 100%;
+}
+
+.form-booking__submit {
+  display: flex;
+  background: #FFFFFF;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #6C0287;
+  padding: 16px 50px;
+  border: 0;
+  margin-left: auto;
+  margin-right: 90px;
+}

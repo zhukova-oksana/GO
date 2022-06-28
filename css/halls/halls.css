@@ -1,30 +1,27 @@
+.halls {
+  padding-bottom: 100px;
+}
+
 .halls__title {
   margin-bottom: 60px;
 }
 
 .list-halls {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .list-halls__item {
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
   width: 580px;
-  text-align: center;
+  height: 349px;
+  justify-content: center;
   font-weight: 700;
   font-size: 70px;
   line-height: 1.143;
   text-transform: uppercase;
-  padding: 135px 0 134px;
-  margin: 0 14px 20px 0;
-}
-
-.list-halls__item:nth-last-child(-n+2) {
-  margin-bottom: 0;
-}
-
-.list-halls__item:nth-child(2n) {
-  margin-right: 0;
 }
 
 .list-halls__item_type_vibes {
@@ -45,4 +42,6 @@
 
 .list-halls__name {
   display: inline-block;
+  max-width: 252px;
+  text-align: center;
 }

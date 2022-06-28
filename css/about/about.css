@@ -1,13 +1,11 @@
 .about__info {
-  display: inline-block;
-  vertical-align: top;
+  display: flex;
+  align-items: flex-start;
+  gap: 74px;
 }
 
 .about__images {
-  display: inline-block;
-  vertical-align: top;
   min-width: 600px;
-  margin-right: 74px;
 }
 
 .about__image {
@@ -15,8 +13,6 @@
 }
 
 .about__text {
-  display: inline-block;
-  vertical-align: top;
   max-width: 500px;
 }
 
@@ -58,22 +54,21 @@
 }
 
 .author {
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
   font-size: 20px;
   line-height: 1.4;
   font-style: normal;
 }
 
 .author__avatar {
-  display: inline-block;
-  vertical-align: middle;
   width: 80px;
   height: 80px;
   object-fit: cover;
   object-position: top;
   border-radius: 50%;
-  margin-right: 30px;
 }
 
 .author__info {

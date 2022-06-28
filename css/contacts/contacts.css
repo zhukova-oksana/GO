@@ -1,5 +1,15 @@
 .contacts {
-  padding: 50px 0 100px;
+  padding: 50px 0 10px;
+  background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+}
+
+.contacts__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__row:not(:last-child) {
+  margin-bottom: 156px;
 }
 
 .wrap-address {
@@ -9,9 +19,15 @@
   font-style: normal;
 }
 
+.wrap-address__address,
+.wrap-address__phone,
+.wrap-address__email {
+  display: flex;
+  align-items: center;
+  gap: 31px;
+}
+
 .wrap-address__address {
-  display: inline-block;
-  vertical-align: middle;
   margin-bottom: 38px;
 }
 
@@ -21,9 +37,6 @@
   content: "";
   width: 35px;
   height: 32px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 31px;
 }
 
 .wrap-address__address:before {
@@ -31,8 +44,8 @@
 }
 
 .wrap-address__link {
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
   color: #ffffff;
   text-decoration: none;
 }
@@ -48,13 +61,12 @@
 .wrap-address__email:before {
   width: 36px;
   height: 24px;
-  margin-right: 26px;
   background-image: url("../halls/img/icon-mail.svg");
 }
 
 .address {
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
   max-width: 250px;
 }
 
@@ -82,4 +94,20 @@
 }
 .navigation__image {
   display: block;
+}
+.copy {
+  font-size: 14px;
+  line-height: 1.142857;
+}
+
+.copy__info {
+
+}
+
+.design {
+  text-align: right;
+}
+
+.design__paragraph:not(:last-child) {
+  margin-bottom: 6px;
 }

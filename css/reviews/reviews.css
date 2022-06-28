@@ -2,20 +2,24 @@
   max-width: 1040px;
 }
 
-.reviews__item {
-  display: inline-block;
-  vertical-align: middle;
+.reviews__list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
-.reviews__item:not(:last-child) {
-  margin-bottom: 50px;
+.reviews__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .avatar {
-  display: inline-block;
-  vertical-align: top;
-  text-align: center;
-  margin-right: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+  justify-content: center;
 }
 
 .avatar__image {
@@ -24,7 +28,6 @@
   object-fit: cover;
   object-position: top;
   border-radius: 50%;
-  margin-bottom: 11px;
 }
 
 .avatar__image_position_40 {
@@ -36,8 +39,6 @@
 }
 
 .reviews__text {
-  display: inline-block;
-  vertical-align: top;
   max-width: 680px;
   padding: 50px 0 0 0;
 }

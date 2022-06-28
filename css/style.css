@@ -77,3 +77,22 @@ section {
 .page__paragraph:not(:last-child) {
   margin-bottom: 23px;
 }
+
+.page__bold {
+  font-weight: 900;
+}
+
+.page__bold_size_100 {
+  font-size: 100px;
+  line-height: 1.41;
+}
+
+.page__bold_size_75 {
+  font-size: 75px;
+  line-height: 1.413;
+  font-variant: small-caps;
+}
+
+.page__bold_color_violet {
+  color: #CD06FF;
+}

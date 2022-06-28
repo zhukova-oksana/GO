@@ -1,6 +1,9 @@
 @import "style.css";
+@import "header/header.css";
 @import "promo/promo.css";
+@import "all/all.css";
 @import "halls/halls.css";
+@import "booking/booking.css";
 @import "about/about.css";
 @import "reviews/reviews.css";
 @import "questions/questions.css";
