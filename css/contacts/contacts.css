@@ -70,38 +70,25 @@
   max-width: 250px;
 }
 
-.navigation__list {
-  display: inline-block;
-}
-
-.navigation__item {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.navigation__item:not(:last-child) {
-  margin-right: 22px;
+.social {
+  gap: 22px;
 }
 
 .navigation__link {
-  display: inline-block;
-  vertical-align: middle;
   color: #ffffff;
 }
 
 .navigation__link:hover {
   color: #CD06FF;
 }
+
 .navigation__image {
   display: block;
 }
+
 .copy {
   font-size: 14px;
   line-height: 1.142857;
-}
-
-.copy__info {
-
 }
 
 .design {
