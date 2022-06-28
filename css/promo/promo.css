@@ -43,7 +43,7 @@
 
 .information__button {
   display: inline-flex;
-  background: #6C0287;
+  background-color: #6C0287;
   box-shadow: 0 0 20px #6C0287;
   border-radius: 10px;
 }
@@ -55,8 +55,20 @@
   text-transform: uppercase;
   color: #FFFFFF;
   padding: 25px 69px;
-  background: #6C0287;
+  background-color: #6C0287;
   border-radius: 10px;
+}
+
+.information__link:hover {
+  background-color: #840AA3;
+}
+
+.information__link:focus {
+  background-color: #840AA3;
+}
+
+.information__link:active {
+  background-color: #640AA3;
 }
 
 .promo__arrow {

@@ -1,5 +1,5 @@
 .booking {
-  background: #440F51;
+  background-color: #440F51;
   padding: 80px 0;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .selection__text {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   border-radius: 8px;
   font-weight: 700;
   font-size: 30px;
@@ -44,7 +44,7 @@
 }
 
 .selection__text:hover {
-  background: #EADEED;
+  background-color: #EADEED;
   border: 3px solid #640AA3;
 }
 
@@ -53,7 +53,7 @@
 }
 
 .selection__text:active {
-  background: #6C0287;
+  background-color: #6C0287;
   border: 3px solid #FFFFFF;
   color: #ffffff;
 }
@@ -67,7 +67,7 @@
 }
 
 .selection__input:checked + .selection__text {
-  background: #6C0287;
+  background-color: #6C0287;
   border: 3px solid #FFFFFF;
   color: #ffffff;
 }
@@ -172,15 +172,28 @@
 
 .form-booking__submit {
   display: flex;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
+  border: 3px solid #fff;
   border-radius: 10px;
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
   color: #6C0287;
-  padding: 16px 50px;
-  border: 0;
+  padding: 13px 50px;
   margin-left: auto;
   margin-right: 90px;
+  outline: none;
+}
+.form-booking__submit:hover {
+  background-color: #EADEED;
+  border-color: #6C0287;
+}
+
+.form-booking__submit:focus {
+  border-color: #6C0287;
+}
+
+.form-booking__submit:active {
+  border-color: #EADEED;
 }

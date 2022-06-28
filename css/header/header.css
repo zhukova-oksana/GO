@@ -28,10 +28,26 @@
 .header__link {
   font-weight: 700;
   font-size: 22px;
-  line-height: 1.36363;
+  line-height: 1.363636;
   text-transform: uppercase;
   color: #FFFFFF;
-  padding: 10px 32px;
+  padding: 9px 32px 10px;
   border: 3px solid #CD06FF;
   border-radius: 10px;
+  outline: none;
+}
+
+.header__link:hover {
+  background: #6C0287;
+  border-color: #6C0287;
+}
+
+.header__link:focus {
+  background: #6C0287;
+  border-color: #6C0287;
+}
+
+.header__link:active {
+  background: #640AA3;
+  border-color: #640AA3;
 }
