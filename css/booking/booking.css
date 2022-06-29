@@ -96,17 +96,21 @@
   margin-bottom: 24px;
 }
 
-.set__label {
+.set__row {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 22px;
-  line-height: 1.13636363;
   margin-bottom: 20px;
 }
 
-.set__label:last-child {
+.set__row:last-child {
   margin-bottom: 0;
+}
+
+.set__label {
+  font-size: 22px;
+  line-height: 1.13636363;
+  cursor: pointer;
 }
 
 .set__input {

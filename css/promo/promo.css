@@ -40,9 +40,12 @@
 
 .information__bold {
   font-weight: 900;
+  color: #CD06FF;
+}
+
+.information__bold_size_100 {
   font-size: 100px;
   line-height: 1.41;
-  color: #CD06FF;
 }
 
 .information__bold_size_75 {

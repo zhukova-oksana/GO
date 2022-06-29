@@ -23,7 +23,7 @@
             <li class="navigation__item"><a class="navigation__link" href="#contacts">Контакты</a></li>
           </ul>
         </nav>
-        <button type="button" class="header__button" name="order">Заказать звонок</button>
+        <button type="button" class="header__button">Заказать звонок</button>
       </div>
 
     </div>
@@ -37,11 +37,11 @@
         <div class="information">
           <div class="information__row">
             <div class="information__item">
-              <p class="information__bold">4</p>
+              <p class="information__bold information__bold_size_100">4</p>
               <p class="information__text">Тематических зала</p>
             </div>
             <div class="information__item">
-              <p class="information__bold information__bold_size_75 ">new</p>
+              <p class="information__bold information__bold_size_75div</p>
               <p class="information__text">Новейшая аппаратура</p>
             </div>
           </div>
@@ -118,44 +118,54 @@
 
             <fieldset class="set__item">
               <legend class="set__title">Приставка:</legend>
-              <label class="set__label">
-                <input class="set__input" type="radio" name="console" value="playstation"> PlayStation
-              </label>
-              <label class="set__label">
-                <input class="set__input" type="radio" name="console" value="sega"> Sega Mega Drive
-              </label>
-              <label class="set__label">
-                <input class="set__input" type="radio" name="console" value="x-box"> X-box One S
-              </label>
-              <label class="set__label">
-                <input class="set__input" type="radio" name="console" value="dendy"> Dendy
-              </label>
+              <div class="set__row">
+                <input class="set__input" type="radio" name="console" value="playstation" id="playstation">
+                <label class="set__label" for="playstation">PlayStation</label>
+              </div>
+              <div class="set__row">
+                <input class="set__input" type="radio" name="console" value="sega" id="sega">
+                <label class="set__label" for="sega">Sega Mega Drive</label>
+              </div>
+              <div class="set__row">
+                <input class="set__input" type="radio" name="console" value="x-box" id="xbox">
+                <label class="set__label" for="xbox">X-box One S</label>
+              </div>
+              <div class="set__row">
+                <input class="set__input" type="radio" name="console" value="dendy" id="dendy">
+                <label class="set__label" for="dendy">Dendy</label>
+              </div>
             </fieldset>
 
             <fieldset class="set__item">
               <legend class="set__title">Настольные игры:</legend>
-              <label class="set__label">
-                <input class="set__input" type="checkbox" name="game" value="jenga"> Jenga
-              </label>
-              <label class="set__label">
-                <input class="set__input" type="checkbox" name="game" value="monopoly"> Monopoly
-              </label>
-              <label class="set__label">
-                <input class="set__input" type="checkbox" name="game" value="manchkin"> Манчкин
-              </label>
-              <label class="set__label">
-                <input class="set__input" type="checkbox" name="game" value="alias"> Alias
-              </label>
+              <div class="set__row">
+                <input class="set__input" type="checkbox" name="game" value="jenga" id="jenga">
+                <label class="set__label" for="jenga">Jenga</label>
+              </div>
+              <div class="set__row">
+                <input class="set__input" type="checkbox" name="game" value="monopoly" id="monopoly">
+                <label class="set__label" for="monopoly">Monopoly</label>
+              </div>
+              <div class="set__row">
+                <input class="set__input" type="checkbox" name="game" value="manchkin" id="manchkin">
+                <label class="set__label" for="manchkin">Манчкин</label>
+              </div>
+              <div class="set__row">
+                <input class="set__input" type="checkbox" name="game" value="alias" id="alias">
+                <label class="set__label" for="alias">Alias</label>
+              </div>
             </fieldset>
 
             <fieldset class="set__item">
               <legend class="set__title">Дополнительно:</legend>
-              <label class="set__label">
-                <input class="set__input" type="checkbox" name="extra" value="karaoke"> Караоке
-              </label>
-              <label class="set__label">
-                <input class="set__input" type="checkbox" name="extra" value="vr"> VR
-              </label>
+              <div class="set__row">
+                <input class="set__input" type="checkbox" name="extra" value="karaoke" id="karaoke">
+                <label for="karaoke">Караоке</label>
+              </div>
+              <div class="set__row">
+                <input class="set__input" type="checkbox" name="extra" value="vr" id="vr">
+                <label for="vr">VR</label>
+              </div>
             </fieldset>
 
           </fieldset>
