@@ -17,6 +17,7 @@
 }
 
 .form-booking__label {
+  display: flex;
 }
 
 .form-booking__input {
@@ -39,7 +40,7 @@
   text-transform: uppercase;
   color: #000000;
   border: 3px solid #ffffff;
-  padding: 8px 15px;
+  padding: 5px 15px 4px;
   cursor: pointer;
 }
 
@@ -79,9 +80,6 @@
   margin-left: auto;
   margin-right: auto;
   gap: 100px;
-}
-
-.set__legend {
 }
 
 .set__item {
@@ -150,24 +148,14 @@
 
 .date-time {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
+  gap: 32px;
 }
 
 .date-time__label {
   width: 134px;
   display: flex;
   flex-direction: column;
-}
-
-.date-time__input {
-  padding-right: 0;
-  padding-left: 10px;
-}
-
-.date-time__label:last-child {
-  width: 100%;
 }
 
 .form-booking__submit {

@@ -22,6 +22,8 @@
   font-size: 70px;
   line-height: 1.143;
   text-transform: uppercase;
+  padding: 0 164px;
+  text-align: center;
 }
 
 .list-halls__item_type_vibes {
@@ -38,10 +40,4 @@
 
 .list-halls__item_type_neon {
   background-image: url("img/hall-4.jpg");
-}
-
-.list-halls__name {
-  display: inline-block;
-  max-width: 252px;
-  text-align: center;
 }

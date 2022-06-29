@@ -13,7 +13,7 @@
   <header class="header">
     <div class="container">
       <div class="header__row">
-        <a href="/" class="header__logo"><img src="images/logo.svg" width="120" height="66" alt="логотип GO"></a>
+        <a href="#" class="header__logo"><img src="images/logo.svg" width="120" height="66" alt="логотип GO"></a>
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item"><a class="navigation__link" href="#halls">залы</a></li>
@@ -23,7 +23,7 @@
             <li class="navigation__item"><a class="navigation__link" href="#contacts">Контакты</a></li>
           </ul>
         </nav>
-        <a href="#" class="header__link">Заказать звонок</a>
+        <button type="button" class="header__button" name="order">Заказать звонок</button>
       </div>
 
     </div>
@@ -37,19 +37,19 @@
         <div class="information">
           <div class="information__row">
             <div class="information__item">
-              <p class="page__bold page__bold_size_100 page__bold_color_violet">4</p>
-              <p>Тематических зала</p>
+              <p class="information__bold">4</p>
+              <p class="information__text">Тематических зала</p>
             </div>
             <div class="information__item">
-              <p class="page__bold page__bold_size_75 page__bold_color_violet">new</p>
-              <p>Новейшая аппаратура</p>
+              <p class="information__bold information__bold_size_75 ">new</p>
+              <p class="information__text">Новейшая аппаратура</p>
             </div>
           </div>
           <div class="information__button">
             <a href="#booking" class="information__link">Забронировать</a>
           </div>
         </div>
-        <div class="promo__arrow"><img src="css/promo/img/arrow-bot.svg" alt="прокрути вниз"></div>
+        <a href="#" class="promo__arrow"></a>
       </div>
     </section>
 
@@ -85,18 +85,10 @@
         <h2 class="title halls__title">Наши залы</h2>
 
         <ol class="list-halls">
-          <li class="list-halls__item list-halls__item_type_vibes">
-            <span class="list-halls__name">80's vibes</span>
-          </li>
-          <li class="list-halls__item list-halls__item_type_star">
-            <span class="list-halls__name">Star wars</span>
-          </li>
-          <li class="list-halls__item list-halls__item_type_west">
-            <span class="list-halls__name">Wild west</span>
-          </li>
-          <li class="list-halls__item list-halls__item_type_neon">
-            <span class="list-halls__name">Neon style</span>
-          </li>
+          <li class="list-halls__item list-halls__item_type_vibes">80's vibes</li>
+          <li class="list-halls__item list-halls__item_type_star">Star wars</li>
+          <li class="list-halls__item list-halls__item_type_west">Wild west</li>
+          <li class="list-halls__item list-halls__item_type_neon">Neon style</li>
         </ol>
       </div>
     </section>
@@ -107,22 +99,22 @@
         <form class="form-booking" action="https://jsonplaceholder.typicode.com/posts" method="post" name="booking">
           <fieldset class="form-booking__fieldset selection">
             <legend class="form-booking__legend">Выбери зал</legend>
-            <label class="form-booking__label selection__label">
+            <label class="form-booking__label">
               <input class="form-booking__input selection__input" type="radio" name="hall" value="80'svibes"> <span class="selection__text">80's vibes</span>
             </label>
-            <label class="form-booking__label selection__label">
+            <label class="form-booking__label">
               <input class="form-booking__input selection__input" type="radio" name="hall" value="star wars"> <span class="selection__text">star wars</span>
             </label>
-            <label class="form-booking__label selection__label">
+            <label class="form-booking__label">
               <input class="form-booking__input selection__input" type="radio" name="hall" value="wild west"> <span class="selection__text">wild west</span>
             </label>
-            <label class="form-booking__label selection__label">
+            <label class="form-booking__label">
               <input class="form-booking__input selection__input" type="radio" name="hall" value="neon style"> <span class="selection__text">neon style</span>
             </label>
           </fieldset>
 
           <fieldset class="form-booking__fieldset set">
-            <legend class="form-booking__legend set__legend">Собери набор развлечений</legend>
+            <legend class="form-booking__legend">Собери набор развлечений</legend>
 
             <fieldset class="set__item">
               <legend class="set__title">Приставка:</legend>
@@ -170,16 +162,18 @@
 
           <fieldset class="form-booking__fieldset choice">
             <legend class="form-booking__legend">Выбери дату и время</legend>
-            <div class="choice__item date-time">
-              <label class="choice__label date-time__label">
-                Дата <input class="choice__input date-time__input" type="date" name="date" required>
-              </label>
-              <label class="choice__label date-time__label">
-                Время <input class="choice__input date-time__input" type="time" name="time" required>
-              </label>
+            <div class="choice__item">
+              <div class="date-time">
+                <label class="choice__label date-time__label">
+                  Дата <input class="choice__input" type="date" name="date" required>
+                </label>
+                <label class="choice__label date-time__label">
+                  Время <input class="choice__input" type="time" name="time" required>
+                </label>
+              </div>
 
-              <label class="choice__label date-time__label">
-                Количество человек <input class="choice__input date-time__input" type="number" name="amount" required>
+              <label class="choice__label">
+                Количество человек <input class="choice__input" type="number" name="amount" required>
               </label>
             </div>
 
@@ -329,11 +323,11 @@
         </div>
         <div class="contacts__map"><img class="contacts__image" src="images/map.jpg" width="680" height="274" alt="карта"></div>
       </div>
-      <div class="contacts__row copy">
-        <div class="copy__info">© Game Over, 2022</div>
-        <div class="design">
-          <p class="design__paragraph">Design by Anastasia Ilina</p>
-          <p class="design__paragraph"><a href="mailto:ilina9825@gmail.com">ilina9825@gmail.com</a></p>
+      <div class="contacts__row">
+        <div class="contacts__paragraph">© Game Over, 2022</div>
+        <div>
+          <p class="contacts__paragraph contacts__paragraph_align_right">Design by Anastasia Ilina</p>
+          <p class="contacts__paragraph contacts__paragraph_align_right"><a href="mailto:ilina9825@gmail.com">ilina9825@gmail.com</a></p>
         </div>
       </div>
     </div>

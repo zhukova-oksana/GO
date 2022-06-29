@@ -86,17 +86,17 @@
   display: block;
 }
 
-.copy {
+.contacts__paragraph {
   font-size: 14px;
   line-height: 1.142857;
 }
 
-.design {
-  text-align: right;
+.contacts__paragraph:not(:last-child) {
+  margin-bottom: 6px;
 }
 
-.design__paragraph:not(:last-child) {
-  margin-bottom: 6px;
+.contacts__paragraph_align_right {
+  text-align: right;
 }
 
 .contacts__image {
