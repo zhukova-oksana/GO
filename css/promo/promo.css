@@ -77,6 +77,7 @@
   padding: 25px 69px;
   background-color: #6C0287;
   border-radius: 10px;
+  outline: none;
 }
 
 .information__link:hover {
@@ -89,6 +90,7 @@
 
 .information__link:active {
   background-color: #640AA3;
+
 }
 
 .promo__arrow {
@@ -104,4 +106,15 @@
   bottom: 90px;
   left: 50%;
   transform: translate(-50%, 0);
+  outline: none;
+}
+
+.promo__arrow:hover {
+  background: url("img/arrow-bot-hover.svg") #fff no-repeat 50% 28px;
+}
+
+.promo__arrow:focus,
+.promo__arrow:active {
+  background: url("img/arrow-bot.svg") #CD06FF no-repeat 50% 28px;
+  border-color: #CD06FF;
 }

@@ -43,3 +43,19 @@
   background-image: url("img/plus-white.svg");
   border-color: #ffffff;
 }
+
+.questions__item:nth-child(odd):hover:after {
+  background: url("img/plus-white.svg") #440F51 no-repeat center;
+}
+
+.questions__item:nth-child(even):hover:after {
+  background: url("img/plus.svg") #fff no-repeat center;
+}
+
+.questions__item:nth-child(odd):active:after {
+  background: url("img/minus-white.svg") #440F51 no-repeat center;
+}
+
+.questions__item:nth-child(even):active:after {
+  background: url("img/minus.svg") #fff no-repeat center;
+}

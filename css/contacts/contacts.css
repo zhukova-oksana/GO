@@ -79,6 +79,15 @@
 }
 
 .navigation__link:hover {
+  color: #EADEED;
+}
+
+.navigation__link:focus {
+  color: #EADEED;
+  outline-color: #CD06FF;
+}
+
+.navigation__link:active {
   color: #CD06FF;
 }
 

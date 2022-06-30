@@ -67,7 +67,8 @@
   outline: none;
 }
 
-.selection__input:checked + .selection__text {
+.selection__input:checked + .selection__text,
+.selection__input:focus + .selection__text{
   background-color: #6C0287;
   border: 3px solid #FFFFFF;
   color: #ffffff;
@@ -118,6 +119,11 @@
   height: 25px;
 }
 
+.set__input:focus,
+.set__input:active {
+  outline-color: #CD06FF;
+}
+
 .choice {
   display: flex;
   justify-content: center;
@@ -140,14 +146,16 @@
 }
 
 .choice__input {
-  border: 0;
-  padding: 12px 20px;
+  padding: 9px 18px;
   font-size: 18px;
   line-height: 1.555556;
+  border: 2px solid #fff;
 }
 
-.choice__input:focus {
-  outline: 0;
+.choice__input:focus,
+.choice__input:active {
+  outline: none;
+  border: 2px solid #CD06FF;
 }
 
 .date-time {
