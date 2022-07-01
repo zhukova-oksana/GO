@@ -83,8 +83,12 @@
 }
 
 .navigation__link:focus {
+  display: block;
   color: #EADEED;
   outline-color: #CD06FF;
+  outline-width: 1px;
+  outline-style: solid;
+  outline-offset: 1px;
 }
 
 .navigation__link:active {

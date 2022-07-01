@@ -44,21 +44,6 @@
   cursor: pointer;
 }
 
-.selection__text:hover {
-  background-color: #EADEED;
-  border: 3px solid #640AA3;
-}
-
-.selection__text:focus {
-  border: 3px solid #640AA3;
-}
-
-.selection__text:active {
-  background-color: #6C0287;
-  border: 3px solid #FFFFFF;
-  color: #ffffff;
-}
-
 .selection__input {
   position: absolute;
   -webkit-appearance: none;
@@ -67,10 +52,30 @@
   outline: none;
 }
 
-.selection__input:checked + .selection__text,
-.selection__input:focus + .selection__text{
+.selection__input:hover + .selection__text {
+  background-color: #EADEED;
+  border: 3px solid #640AA3;
+}
+
+.selection__input:focus + .selection__text {
+  border: 3px solid #640AA3;
+}
+
+.selection__input:active + .selection__text {
   background-color: #6C0287;
   border: 3px solid #FFFFFF;
+  color: #ffffff;
+}
+
+.selection__input:checked + .selection__text {
+  background-color: #6C0287;
+  border: 3px solid #FFFFFF;
+  color: #ffffff;
+}
+
+.selection__input:checked:focus + .selection__text{
+  background-color: #6C0287;
+  border: 3px solid #640AA3;
   color: #ffffff;
 }
 
@@ -122,6 +127,9 @@
 .set__input:focus,
 .set__input:active {
   outline-color: #CD06FF;
+  outline-width: 1px;
+  outline-style: solid;
+  outline-offset: 2px;
 }
 
 .choice {
