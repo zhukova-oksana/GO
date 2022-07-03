@@ -108,9 +108,7 @@
   transform: translate(-50%, 0);
 }
 
-.promo__arrow:hover {
-  background: url("img/arrow-bot-hover.svg") #fff no-repeat 50% 28px;
-}
+
 
 .promo__arrow:focus {
   outline-color: #CD06FF;
@@ -132,7 +130,14 @@
   left: 0;
 }
 
+.promo__arrow:hover {
+  background: url("img/arrow-bot-hover.svg") #fff no-repeat 50% 28px;
+  border-radius: 50%;
+}
+
 .promo__arrow:active {
   background: url("img/arrow-bot.svg") #CD06FF no-repeat 50% 28px;
   border-color: #CD06FF;
+  border-radius: 50%;
 }
+
