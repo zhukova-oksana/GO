@@ -36,6 +36,7 @@
   border: 3px solid #CD06FF;
   border-radius: 10px;
   outline: none;
+  transition-duration: .6s;
 }
 
 .header__button:hover {

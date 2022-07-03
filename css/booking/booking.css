@@ -50,6 +50,7 @@
   -moz-appearance: none;
   appearance: none;
   outline: none;
+  transition-duration: .6s;
 }
 
 .selection__input:hover + .selection__text {
@@ -122,6 +123,7 @@
 .set__input {
   width: 25px;
   height: 25px;
+  transition-duration: .6s;
 }
 
 .set__input:focus,
@@ -158,6 +160,7 @@
   font-size: 18px;
   line-height: 1.555556;
   border: 2px solid #fff;
+  transition-duration: .6s;
 }
 
 .choice__input:focus,
@@ -192,6 +195,8 @@
   margin-left: auto;
   margin-right: 90px;
   outline: none;
+  transition: background-color 1s ease-in-out, border-color .6s ease-in-out;
+
 }
 .form-booking__submit:hover {
   background-color: #EADEED;
@@ -199,9 +204,11 @@
 }
 
 .form-booking__submit:focus {
+  background-color: #fff;
   border-color: #6C0287;
 }
 
 .form-booking__submit:active {
+  background-color: #EADEED;
   border-color: #EADEED;
 }

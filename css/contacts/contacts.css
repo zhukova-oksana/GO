@@ -76,6 +76,7 @@
 
 .navigation__link {
   color: #ffffff;
+  transition: all .6s ease-in-out;
 }
 
 .navigation__link:hover {
