@@ -42,6 +42,7 @@
   border: 3px solid #ffffff;
   padding: 5px 15px 4px;
   cursor: pointer;
+  transition: background-color 1s ease-in-out, border .6s ease-in-out, color 1s ease-in-out;
 }
 
 .selection__input {
@@ -196,8 +197,8 @@
   margin-right: 90px;
   outline: none;
   transition: background-color 1s ease-in-out, border-color .6s ease-in-out;
-
 }
+
 .form-booking__submit:hover {
   background-color: #EADEED;
   border-color: #6C0287;
