@@ -31,6 +31,10 @@
   transform: scale(1.1);
 }
 
+.all__item:nth-child(3n+2):hover {
+  transform: translateY(50px) scale(1.1);
+}
+
 .all__descr {
   display: flex;
   height: 56px;
