@@ -1,3 +1,7 @@
+.all {
+  padding-bottom: 67px;
+}
+
 .all__title {
   max-width: 850px;
   margin: 0 auto 40px;
@@ -17,6 +21,10 @@
   padding: 6px 40px;
   font-weight: 700;
   transition: transform 0.8s ease-in-out;
+}
+
+.all__item:nth-child(3n+2) {
+  transform: translateY(50px);
 }
 
 .all__item:hover {

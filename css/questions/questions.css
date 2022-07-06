@@ -14,13 +14,13 @@
 }
 
 .questions__item:nth-child(odd) {
-  background-color: #fff;
+  background-color: var(--color-white);
   color: #1C1A1A;
 }
 
 .questions__item:nth-child(even) {
-  background-color: #440F51;
-  color: #ffffff;
+  background-color: var(--dark-purple);
+  color: var(--color-white);
 }
 
 .questions__item:after {
@@ -37,27 +37,27 @@
 
 .questions__item:nth-child(odd):after {
   background-image: url("img/plus.svg");
-  border-color: #440F51;
+  border-color: var(--dark-purple);
 }
 
 .questions__item:nth-child(even):after {
   background-image: url("img/plus-white.svg");
-  border-color: #ffffff;
+  border-color: var(--color-white);
 }
 
 .questions__item:nth-child(odd):hover:after {
-  background: url("img/plus-white.svg") #440F51 no-repeat center;
+  background: url("img/plus-white.svg") var(--dark-purple) no-repeat center;
 
 }
 
 .questions__item:nth-child(even):hover:after {
-  background: url("img/plus.svg") #fff no-repeat center;
+  background: url("img/plus.svg") var(--color-white) no-repeat center;
 }
 
 .questions__item:nth-child(odd):active:after {
-  background: url("img/minus-white.svg") #440F51 no-repeat center;
+  background: url("img/minus-white.svg") var(--dark-purple) no-repeat center;
 }
 
 .questions__item:nth-child(even):active:after {
-  background: url("img/minus.svg") #fff no-repeat center;
+  background: url("img/minus.svg") var(--color-white) no-repeat center;
 }

@@ -1,5 +1,5 @@
 .booking {
-  background-color: #440F51;
+  background-color: var(--dark-purple);
   padding: 80px 0;
 }
 
@@ -31,15 +31,15 @@
 }
 
 .selection__text {
-  background-color: #FFFFFF;
+  background-color: var(--color-white);
   border-radius: 8px;
   font-weight: 700;
   font-size: 30px;
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
-  border: 3px solid #ffffff;
+  color: var(--color-black);
+  border: 3px solid var(--color-white);
   padding: 5px 15px 4px;
   cursor: pointer;
   transition: background-color 1s ease-in-out, border .6s ease-in-out, color 1s ease-in-out;
@@ -55,30 +55,30 @@
 }
 
 .selection__input:hover + .selection__text {
-  background-color: #EADEED;
-  border: 3px solid #640AA3;
+  background-color: var(--color-light);
+  border: 3px solid var(--color-lilac);
 }
 
 .selection__input:focus + .selection__text {
-  border: 3px solid #640AA3;
+  border: 3px solid var(--color-lilac);
 }
 
 .selection__input:active + .selection__text {
-  background-color: #6C0287;
-  border: 3px solid #FFFFFF;
-  color: #ffffff;
+  background-color: var(--color-purple);
+  border: 3px solid var(--color-white);
+  color: var(--color-white);
 }
 
 .selection__input:checked + .selection__text {
-  background-color: #6C0287;
-  border: 3px solid #FFFFFF;
-  color: #ffffff;
+  background-color: var(--color-purple);
+  border: 3px solid var(--color-white);
+  color: var(--color-white);
 }
 
 .selection__input:checked:focus + .selection__text{
-  background-color: #6C0287;
-  border: 3px solid #640AA3;
-  color: #ffffff;
+  background-color: var(--color-purple);
+  border: 3px solid var(--color-lilac);
+  color: var(--color-white);
 }
 
 .set {
@@ -129,7 +129,7 @@
 
 .set__input:focus,
 .set__input:active {
-  outline-color: #CD06FF;
+  outline-color: var(--light-purple);
   outline-width: 1px;
   outline-style: solid;
   outline-offset: 2px;
@@ -160,14 +160,14 @@
   padding: 9px 18px;
   font-size: 18px;
   line-height: 1.555556;
-  border: 2px solid #fff;
+  border: 2px solid var(--color-white);
   transition-duration: .6s;
 }
 
 .choice__input:focus,
 .choice__input:active {
   outline: none;
-  border: 2px solid #CD06FF;
+  border: 2px solid var(--light-purple);
 }
 
 .date-time {
@@ -184,14 +184,14 @@
 
 .form-booking__submit {
   display: flex;
-  background-color: #FFFFFF;
-  border: 3px solid #fff;
+  background-color: var(--color-white);
+  border: 3px solid var(--color-white);
   border-radius: 10px;
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
-  color: #6C0287;
+  color: var(--color-purple);
   padding: 13px 50px;
   margin-left: auto;
   margin-right: 90px;
@@ -200,16 +200,16 @@
 }
 
 .form-booking__submit:hover {
-  background-color: #EADEED;
-  border-color: #6C0287;
+  background-color: var(--color-light);
+  border-color: var(--color-purple);
 }
 
 .form-booking__submit:focus {
-  background-color: #fff;
-  border-color: #6C0287;
+  background-color: var(--color-white);
+  border-color: var(--color-purple);
 }
 
 .form-booking__submit:active {
-  background-color: #EADEED;
-  border-color: #EADEED;
+  background-color: var(--color-light);
+  border-color: var(--color-light);
 }

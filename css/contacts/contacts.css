@@ -46,8 +46,13 @@
 .wrap-address__link {
   display: flex;
   align-items: center;
-  color: #ffffff;
+  color: var(--color-white);
   text-decoration: none;
+  transition: color .6s ease-in-out;
+}
+
+.wrap-address__link:hover {
+  color: var(--light-purple);
 }
 
 .wrap-address__phone {
@@ -74,29 +79,29 @@
   gap: 22px;
 }
 
-.navigation__link {
-  color: #ffffff;
+.social__link {
+  color: var(--color-white);
   transition: all .6s ease-in-out;
 }
 
-.navigation__link:hover {
-  color: #EADEED;
+.social__link:hover {
+  color: var(--color-light);
 }
 
-.navigation__link:focus {
+.social__link:focus {
   display: block;
-  color: #EADEED;
-  outline-color: #CD06FF;
+  color: var(--color-light);
+  outline-color: var(--light-purple);
   outline-width: 1px;
   outline-style: solid;
   outline-offset: 1px;
 }
 
-.navigation__link:active {
-  color: #CD06FF;
+.social__link:active {
+  color: var(--light-purple);
 }
 
-.navigation__image {
+.social__image {
   display: block;
 }
 
@@ -115,4 +120,9 @@
 
 .contacts__image {
   display: block;
+}
+
+.contacts__link:hover {
+  color: var(--light-purple);
+  transition: all .6s ease-in-out;
 }

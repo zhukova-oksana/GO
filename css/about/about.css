@@ -41,7 +41,7 @@
 .quote__paragraph:before {
   content: '“ ';
   font-weight: 900;
-  color: #6C0287;
+  color: var(--color-purple);
   position: absolute;
   left: 0;
 }
@@ -49,7 +49,7 @@
 .quote__paragraph:after {
   content: ' ”';
   font-weight: 900;
-  color: #6C0287;
+  color: var(--color-purple);
 }
 
 .author {
