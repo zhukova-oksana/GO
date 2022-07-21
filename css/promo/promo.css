@@ -4,8 +4,19 @@
 
 .promo__container {
   min-height: 823px;
-  background: url("img/promo.png") no-repeat right 30px bottom / auto 762px;
+  /*background: url("img/promo.png") no-repeat right 30px bottom / auto 762px;*/
   position: relative;
+}
+
+.promo__container:after {
+  content: "";
+  background-image: url("img/promo.png");
+  width: 675px;
+  height: 762px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
 }
 
 .promo__title {
@@ -107,6 +118,7 @@
   left: 50%;
   transform: translate(-50%, 0);
   transition-duration: .6s;
+  z-index: 2;
 }
 
 .promo__arrow:focus {
