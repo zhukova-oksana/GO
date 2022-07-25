@@ -15,7 +15,8 @@
 .list-halls__item {
   display: flex;
   align-items: center;
-  width: 580px;
+  width: 49%;
+  max-width: 580px;
   height: 349px;
   justify-content: center;
   font-weight: 700;
@@ -24,6 +25,8 @@
   text-transform: uppercase;
   padding: 0 164px;
   text-align: center;
+  background-position: center;
+  background-size: cover;
 }
 
 .list-halls__item_type_vibes {
@@ -40,4 +43,38 @@
 
 .list-halls__item_type_neon {
   background-image: url("img/hall-4.jpg");
+}
+
+@media(max-width: 1124px) {
+  .halls {
+    padding-bottom: 70px;
+  }
+
+  .list-halls {
+    justify-content: center;
+  }
+
+  .list-halls__item {
+    width: 442px;
+    height: 267px;
+    font-size: 50px;
+    line-height: 1.2;
+  }
+}
+
+@media(max-width: 1023px) {
+  .halls {
+    padding-bottom: 62px;
+  }
+
+  .halls__title {
+    margin-bottom: 35px;
+  }
+
+  .list-halls__item {
+    width: 334px;
+    height: 200px;
+    font-size: 40px;
+    line-height: 1.25;
+  }
 }
