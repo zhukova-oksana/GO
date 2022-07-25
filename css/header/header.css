@@ -100,7 +100,7 @@
 
 @media(max-width: 1124px) {
   .header {
-    padding: 30px 0 5px;
+    padding: 30px 0 10px;
   }
 
   .header__logo {
@@ -122,6 +122,13 @@
 }
 
 @media(max-width: 1023px) {
+  .header {
+    padding-top: 33px;
+  }
+
+  .header__row {
+    align-items: flex-end;
+  }
 
   .navigation {
     order: -1;
@@ -143,5 +150,30 @@
 @media(max-width: 700px) {
   .header__button {
     display: none;
+  }
+}
+
+@media(max-width: 480px) {
+  .header {
+    padding-top: 22px;
+    padding-bottom: 0;
+  }
+
+  .header__logo {
+    max-width: 66px;
+  }
+
+  .menu-button {
+    width: 39px;
+    height: 21px;
+  }
+
+  .menu-button__line {
+    height: 3px;
+  }
+
+  .menu-button:before,
+  .menu-button:after {
+    height: 3px;
   }
 }

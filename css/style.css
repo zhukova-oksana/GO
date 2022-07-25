@@ -72,11 +72,11 @@ section {
   line-height: 1.25;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 44px;
 }
 
 .page__paragraph:not(:last-child) {
-  margin-bottom: 23px;
+  margin-bottom: 28px;
 }
 
 @media(max-width: 1124px) {
@@ -99,12 +99,15 @@ section {
     line-height: 1.3333;
   }
 
+  .page__paragraph:not(:last-child) {
+    margin-bottom: 24px;
+  }
 }
 
 @media(max-width: 1023px) {
   body {
     font-size: 16px;
-    line-height: 22px;
+    line-height: 1.22;
   }
 
   .container {
@@ -118,5 +121,30 @@ section {
   .title {
     font-size: 24px;
     line-height: 1.5;
+  }
+}
+
+@media(max-width: 500px) {
+  body {
+    font-size: 12px;
+    line-height: 1.33;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  section {
+    padding: 15px 0;
+  }
+
+  .title {
+    font-size: 14px;
+    line-height: 1.14;
+    margin-bottom: 15px;
+  }
+
+  .page__paragraph {
+    font-size: 12px;
   }
 }

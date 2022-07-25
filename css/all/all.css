@@ -1,5 +1,5 @@
 .all {
-  padding-bottom: 90px;
+  padding-bottom: 122px;
 }
 
 .all__title {
@@ -21,10 +21,12 @@
   padding: 6px 40px;
   font-weight: 700;
   transition: transform 0.8s ease-in-out;
+  background-size: cover;
+  background-position: center;
 }
 
 .all__item:nth-child(3n+2) {
-  transform: translateY(50px);
+  transform: translateY(77px);
 }
 
 .all__item:hover {
@@ -66,7 +68,8 @@
 
 @media(max-width: 1124px) {
   .all {
-    padding-bottom: 78px;
+    padding-bottom: 88px;
+    padding-top: 40px;
   }
 
   .all__title {
@@ -82,6 +85,10 @@
     width: 287px;
     height: 172px;
     padding: 5px 20px;
+  }
+
+  .all__item:nth-child(3n+2) {
+    transform: translateY(53px);
   }
 
   .all__descr {
@@ -106,11 +113,38 @@
   }
 
   .all__item {
-    width: 334px;
+    width: 48%;
     height: 200px;
   }
 
   .all__item:nth-child(3n+2) {
     transform: translateY(0);
+  }
+}
+
+@media(max-width: 480px) {
+  .all {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+
+  .all__title {
+    margin-bottom: 19px;
+  }
+
+  .all__list {
+    gap: 10px;
+  }
+
+  .all__item {
+    max-width: 135px;
+    height: 75px;
+    padding: 10px 10px 3px;
+  }
+
+  .all__descr {
+    font-size: 10px;
+    line-height: 1.4;
+    min-height: 42px;
   }
 }

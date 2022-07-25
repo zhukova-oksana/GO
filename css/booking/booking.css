@@ -6,14 +6,14 @@
 .form-booking__fieldset {
   border: 0;
   padding: 0;
-  margin: 0 0 60px;
+  margin: 0 0 58px;
 }
 
 .form-booking__legend {
   font-weight: 700;
   font-size: 24px;
   text-align: center;
-  margin: 0 auto 40px;
+  margin: 0 auto 36px;
 }
 
 .form-booking__label {
@@ -41,6 +41,7 @@
   color: var(--color-black);
   border: 3px solid var(--color-white);
   padding: 5px 15px 4px;
+  width: 250px;
   cursor: pointer;
   transition: background-color 1s ease-in-out, border .6s ease-in-out, color 1s ease-in-out;
 }
@@ -87,7 +88,7 @@
   max-width: 980px;
   margin-left: auto;
   margin-right: auto;
-  gap: 100px;
+  gap: 80px;
 }
 
 .set__item {
@@ -138,7 +139,8 @@
 .choice {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 41px;
+  margin-bottom: 29px;
 }
 
 .choice__item {
@@ -194,7 +196,7 @@
   color: var(--color-purple);
   padding: 13px 50px;
   margin-left: auto;
-  margin-right: 90px;
+  margin-right: 99px;
   outline: none;
   transition: background-color 1s ease-in-out, border-color .6s ease-in-out;
   box-shadow: 0 0 20px #fff;
@@ -217,15 +219,20 @@
 
 @media(max-width: 1124px) {
   .booking {
-    padding: 60px 0;
+    padding: 60px 0 54px;
+  }
+
+  .booking__title {
+    margin-bottom: 36px;
   }
 
   .form-booking__legend {
-    margin-bottom: 26px;
+    margin-bottom: 22px;
   }
 
   .selection__text {
     padding: 7px 20px 7px;
+    width: 181px;
     font-size: 20px;
     line-height: 1.2;
   }
@@ -266,7 +273,7 @@
   }
 
   .form-booking__legend {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
   }
 
   .selection {
@@ -286,19 +293,28 @@
     justify-content: left;
     margin: 0 auto 50px;
     max-width: 688px;
-    gap: 32px;
+    gap: 30px 64px;
   }
 
   .set__item {
     flex: 0 0 301px
   }
 
+  .set__input {
+    width: 40px;
+    height: 40px;
+  }
+
+  .set__row {
+    gap: 21px;
+  }
+
   .choice {
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 688px;
-    margin: 0 auto 34px;
-    gap: 0;
+    margin: 0 auto 27px;
+    gap: 9px;
   }
 
   .choice__item {
@@ -311,7 +327,7 @@
     font-size: 22px;
     line-height: 28px;
     padding: 13px 47px;
-    margin-right: 4px;
+    margin-right: 0;
   }
 
   .choice__input {
@@ -338,5 +354,90 @@
 
   .form-booking__submit {
     margin: 0 auto;
+  }
+
+  .form-booking__legend,
+  .set__title,
+  .set__label {
+    font-size: 14px;
+    line-height: 1.2857;
+  }
+
+  .set {
+    max-width: 320px;
+  }
+}
+
+@media(max-width: 480px) {
+  .booking {
+    padding: 33px 0;
+  }
+
+  .booking__title {
+    margin-bottom: 15px;
+  }
+
+  .form-booking__legend {
+    margin-bottom: 14px;
+  }
+
+  .selection {
+    gap: 14px 20px;
+    margin-bottom: 31px;
+  }
+
+  .selection__text {
+    padding: 5px 7px 2px;
+    font-size: 14px;
+    width: 130px;
+    border-radius: 4px;
+  }
+
+  .set {
+    margin-bottom: 40px;
+  }
+
+  .set__row {
+    margin-bottom: 15px;
+  }
+
+  .set__title {
+    margin-bottom: 15px;
+  }
+
+  .set__input {
+    width: 30px;
+    height: 30px;
+  }
+
+  .date-time {
+    gap: 11px;
+  }
+
+  .choice__input {
+    width: 280px;
+  }
+
+  .date-time__input {
+    width: 134px;
+  }
+
+  .date-time__label {
+    margin-bottom: 5px;
+  }
+
+  .choice {
+    margin-bottom: 35px;
+  }
+
+  .choice__item {
+    gap: 0;
+  }
+
+  .form-booking__submit {
+    font-size: 18px;
+    line-height: 26px;
+    border-radius: 4px;
+    width: 280px;
   }
 }

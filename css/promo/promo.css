@@ -11,13 +11,13 @@
 .promo__container:after {
   content: "";
   background-image: url("img/promo.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
   width: 675px;
   height: 762px;
   position: absolute;
-  right: 30px;
+  right: 59px;
   bottom: 0;
   z-index: 1;
 }
@@ -93,6 +93,7 @@
   border-radius: 10px;
   outline: none;
   transition-duration: .6s;
+  z-index: 9;
 }
 
 .information__link:hover {
@@ -157,11 +158,12 @@
 
 @media(max-width: 1124px) {
   .promo__container {
-    min-height: 583px;
+    min-height: 585px;
   }
 
   .promo__title {
     font-size: 120px;
+    margin-bottom: 18px;
   }
 
   .promo__container:after {
@@ -193,8 +195,8 @@
   .promo__arrow {
     width: 67px;
     height: 67px;
-    background-position: 50% 14px;
-    bottom: 46px;
+    background-position: 50% 12px;
+    bottom: 54px;
   }
 
   .promo__arrow:hover {
@@ -218,7 +220,7 @@
 
 @media(max-width: 1023px) {
   .promo {
-    padding-bottom: 50px;
+    padding-bottom: 41px;
   }
 
   .promo__container {
@@ -233,12 +235,13 @@
 
   .promo__title {
     font-size: 86px;
-    margin-bottom: 10px;
+    margin-bottom: 17px;
   }
 
   .promo__subtitle {
     font-size: 18px;
     margin-left: 70px;
+    margin-bottom: 46px;
   }
 
   .information {
@@ -283,6 +286,10 @@
 }
 
 @media(max-width: 600px) {
+  .promo {
+    padding-bottom: 16px;
+  }
+
   .promo__container {
     min-height: 204px;
   }
@@ -292,9 +299,50 @@
     letter-spacing: -0.08em;
   }
 
+  .promo__subtitle {
+    font-size: 10px;
+    line-height: 1.4;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  .information__row {
+    margin-bottom: 30px;
+    gap: 20px;
+    max-width: 139px;
+  }
+
+  .information__text {
+    font-size: 10px;
+    line-height: 1.1;
+  }
+
+  .information__bold_size_100 {
+    font-size: 26px;
+    line-height: 1.423;
+  }
+
+  .information__bold_size_75 {
+    font-size: 22px;
+    line-height: 31px;
+  }
+
   .promo__container:after {
     width: 161px;
     height: 179px;
     right: 20px;
+  }
+
+  .information__link {
+    font-size: 10px;
+    line-height: 1.2;
+    padding: 8px 13px 7px;
+    border-radius: 4px;
+  }
+}
+
+@media(max-width: 480px) {
+  .promo__title {
+    margin-bottom: 6px;
   }
 }

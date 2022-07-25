@@ -3,7 +3,7 @@
 }
 
 .halls__title {
-  margin-bottom: 60px;
+  margin-bottom: 46px;
 }
 
 .list-halls {
@@ -50,6 +50,10 @@
     padding-bottom: 70px;
   }
 
+  .halls__title {
+    margin-bottom: 36px;
+  }
+
   .list-halls {
     justify-content: center;
   }
@@ -76,5 +80,28 @@
     height: 200px;
     font-size: 40px;
     line-height: 1.25;
+  }
+}
+
+@media(max-width: 480px) {
+  .halls {
+    padding-bottom: 30px;
+  }
+
+  .halls__title {
+    margin-bottom: 15px;
+  }
+
+  .list-halls {
+    gap: 10px;
+  }
+
+  .list-halls__item {
+    max-width: 280px;
+    width: 280px;
+    height: 168px;
+    padding: 0 72px;
+    font-size: 26px;
+    line-height: 1.31;
   }
 }
