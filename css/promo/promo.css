@@ -11,10 +11,13 @@
 .promo__container:after {
   content: "";
   background-image: url("img/promo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
   width: 675px;
   height: 762px;
   position: absolute;
-  right: 0;
+  right: 30px;
   bottom: 0;
   z-index: 1;
 }
@@ -152,3 +155,146 @@
   border-radius: 50%;
 }
 
+@media(max-width: 1124px) {
+  .promo__container {
+    min-height: 583px;
+  }
+
+  .promo__title {
+    font-size: 120px;
+  }
+
+  .promo__container:after {
+    width: 453px;
+    height: 520px;
+    right: 60px;
+  }
+
+  .promo__subtitle {
+    font-size: 22px;
+  }
+
+  .information__row {
+    margin-bottom: 80px;
+  }
+
+  .information__text {
+    font-size: 26px;
+  }
+
+  .information__bold_size_100 {
+    font-size: 80px;
+  }
+
+  .information__bold_size_75 {
+    font-size: 60px;
+  }
+
+  .promo__arrow {
+    width: 67px;
+    height: 67px;
+    background-position: 50% 14px;
+    bottom: 46px;
+  }
+
+  .promo__arrow:hover {
+    background-position: 50% 14px;
+  }
+
+  .promo__arrow:active {
+    background-position: 50% 14px;
+  }
+
+  .information {
+    max-width: 370px;
+    text-align: center;
+  }
+
+  .information__link {
+    font-size: 22px;
+    padding: 20px 48px 19px;
+  }
+}
+
+@media(max-width: 1023px) {
+  .promo {
+    padding-bottom: 50px;
+  }
+
+  .promo__container {
+    min-height: 537px;
+  }
+
+  .promo__container:after {
+    width: 409px;
+    height: 479px;
+    right: 40px;
+  }
+
+  .promo__title {
+    font-size: 86px;
+    margin-bottom: 10px;
+  }
+
+  .promo__subtitle {
+    font-size: 18px;
+    margin-left: 70px;
+  }
+
+  .information {
+    max-width: 224px;
+    text-align: left;
+  }
+
+  .information__row {
+    gap: 35px;
+    margin-bottom: 100px;
+  }
+
+  .information__text {
+    font-size: 16px;
+  }
+
+  .information__bold_size_100 {
+    font-size: 50px;
+  }
+
+  .information__bold_size_75 {
+    font-size: 40px;
+  }
+
+  .information__link {
+    font-size: 16px;
+    padding: 14px 35px 13px;
+  }
+
+  .promo__arrow {
+    display: none;
+  }
+
+}
+
+@media(max-width: 700px) {
+  .promo__title {
+    font-size: 55px;
+    letter-spacing: -0.08em;
+  }
+
+}
+
+@media(max-width: 600px) {
+  .promo__container {
+    min-height: 204px;
+  }
+
+  .promo__title {
+    font-size: 35px;
+    letter-spacing: -0.08em;
+  }
+
+  .promo__container:after {
+    width: 161px;
+    height: 179px;
+    right: 20px;
+  }
+}

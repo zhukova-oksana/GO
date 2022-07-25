@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <title>Проект "GO"</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/index.css">
+  <style>
+    .about__info {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 270px 325px;
+      gap: 0 74px;
+    }
+
+    .about__images {
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+    }
+
+    .about__description {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+
+    .quote {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+
+    @media(max-width: 1124px) {
+      .about__info {
+        grid-template-rows: 221px 217px;
+        gap: 0 40px;
+      }
+    }
+
+    @media(max-width: 1023px) {
+      .about__info {
+        grid-template-columns: 382px auto;
+        gap: 0 28px;
+      }
+
+      .about__images {
+        min-width: 382px;
+      }
+
+      .about__description {
+        margin-bottom: 0;
+      }
+
+      .about__image_1,
+      .about__image_2 {
+        width: 191px;
+        height: 131px;
+      }
+
+      .about__image_3 {
+        width: 104px;
+        height: 143px;
+      }
+
+      .about__image_4 {
+        width: 115px;
+        height: 143px;
+      }
+
+      .about__image_5 {
+        width: 163px;
+        height: 143px;
+      }
+
+      .about__image_6 {
+        width: 242px;
+        height: 106px;
+      }
+
+      .about__image_7 {
+        width: 140px;
+        height: 106px;
+      }
+
+      .quote__paragraph {
+        padding-left: 22px;
+      }
+    }
+
+    @media(max-width: 850px) {
+      .about__info {
+        grid-template-columns: 382px auto;
+        grid-template-rows: 380px 184px;
+        gap: 30px 28px;
+      }
+
+      .about__images {
+        grid-row: 1 / 2;
+        min-width: 382px;
+      }
+
+      .about__description {
+        align-self: center;
+      }
+
+      .quote {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+      }
+    }
+  </style>
+</head>
+<body class="page">
+  <header class="header">
+    <div class="container">
+      <div class="header__row">
+        <a href="#" class="header__logo"><img class="header__image" src="images/logo.svg" width="120" height="66" alt="логотип GO"></a>
+        <nav class="navigation">
+          <a href="#" class="menu-button">
+            <span class="menu-button__line">Меню</span>
+          </a>
+          <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link" href="#halls">залы</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#about">О нас</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#booking">Бронь</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#reviews">отзывы</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+        <button type="button" class="header__button">Заказать звонок</button>
+      </div>
+
+    </div>
+  </header>
+  <main>
+
+    <section class="promo">
+      <div class="container promo__container">
+        <h1 class="promo__title">GAME OVER</h1>
+        <p class="promo__subtitle">Новый формат игр и отдыха</p>
+        <div class="information">
+          <div class="information__row">
+            <div class="information__item">
+              <p class="information__bold information__bold_size_100">4</p>
+              <p class="information__text">Тематических зала</p>
+            </div>
+            <div class="information__item">
+              <p class="information__bold information__bold_size_75">new</p>
+              <p class="information__text">Новейшая аппаратура</p>
+            </div>
+          </div>
+          <div class="information__button">
+            <a href="#booking" class="information__link">Забронировать</a>
+          </div>
+        </div>
+        <a href="#all" class="promo__arrow"></a>
+      </div>
+    </section>
+
+    <section id="all" class="all">
+      <div class="container">
+        <h2 class="title all__title">У нас есть всё для классного отдыха с&nbsp;друзьями!</h2>
+
+        <ul class="all__list">
+          <li class="all__item all__item_vr">
+              <span class="all__descr">VR очки</span>
+          </li>
+          <li class="all__item all__item_audio">
+              <span class="all__descr">Аудио-система 5.1 с&nbsp;отличным звуком</span>
+          </li>
+          <li class="all__item all__item_micro">
+              <span class="all__descr">Караоке (4 микрофона)</span>
+          </li>
+          <li class="all__item all__item_game">
+              <span class="all__descr">Настольные игры</span>
+          </li>
+          <li class="all__item all__item_netflix">
+              <span class="all__descr">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</span>
+          </li>
+          <li class="all__item all__item_sony">
+              <span class="all__descr">PlayStation 5</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="halls" class="halls">
+      <div class="container">
+        <h2 class="title halls__title">Наши залы</h2>
+
+        <ol class="list-halls">
+          <li class="list-halls__item list-halls__item_type_vibes">80's vibes</li>
+          <li class="list-halls__item list-halls__item_type_star">Star wars</li>
+          <li class="list-halls__item list-halls__item_type_west">Wild west</li>
+          <li class="list-halls__item list-halls__item_type_neon">Neon style</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="booking" class="booking">
+      <div class="container">
+        <h2 class="title booking__title">Забронировать зал просто</h2>
+        <form class="form-booking" action="https://jsonplaceholder.typicode.com/posts" method="post" name="booking">
+          <fieldset class="form-booking__fieldset selection">
+            <legend class="form-booking__legend">Выбери зал</legend>
+            <label class="form-booking__label">
+              <input class="form-booking__input selection__input" type="radio" name="hall" value="80'svibes"> <span class="selection__text">80's vibes</span>
+            </label>
+            <label class="form-booking__label">
+              <input class="form-booking__input selection__input" type="radio" name="hall" value="star wars"> <span class="selection__text">star wars</span>
+            </label>
+            <label class="form-booking__label">
+              <input class="form-booking__input selection__input" type="radio" name="hall" value="wild west"> <span class="selection__text">wild west</span>
+            </label>
+            <label class="form-booking__label">
+              <input class="form-booking__input selection__input" type="radio" name="hall" value="neon style"> <span class="selection__text">neon style</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="form-booking__fieldset set">
+            <legend class="form-booking__legend">Собери набор развлечений</legend>
+
+            <fieldset class="set__item">
+              <legend class="set__title">Приставка:</legend>
+              <div class="set__row">
+                <input class="set__input" type="radio" name="console" value="playstation" id="playstation">
+                <label class="set__label" for="playstation">PlayStation</label>
+              </div>
+              <div class="set__row">
+                <input class="set__input" type="radio" name="console" value="sega" id="sega">
+                <label class="set__label" for="sega">Sega Mega Drive</label>
+              </div>
+              <div class="set__row">
+                <input class="set__input" type="radio" name="console" value="x-box" id="xbox">
+                <label class="set__label" for="xbox">X-box One S</label>
+              </div>
+              <div class="set__row">
+                <input class="set__input" type="radio" name="console" value="dendy" id="dendy">
+                <label class="set__label" for="dendy">Dendy</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="set__item">
+              <legend class="set__title">Настольные игры:</legend>
+              <div class="set__row">
+                <input class="set__input" type="checkbox" name="game" value="jenga" id="jenga">
+                <label class="set__label" for="jenga">Jenga</label>
+              </div>
+              <div class="set__row">
+                <input class="set__input" type="checkbox" name="game" value="monopoly" id="monopoly">
+                <label class="set__label" for="monopoly">Monopoly</label>
+              </div>
+              <div class="set__row">
+                <input class="set__input" type="checkbox" name="game" value="manchkin" id="manchkin">
+                <label class="set__label" for="manchkin">Манчкин</label>
+              </div>
+              <div class="set__row">
+                <input class="set__input" type="checkbox" name="game" value="alias" id="alias">
+                <label class="set__label" for="alias">Alias</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="set__item">
+              <legend class="set__title">Дополнительно:</legend>
+              <div class="set__row">
+                <input class="set__input" type="checkbox" name="extra" value="karaoke" id="karaoke">
+                <label class="set__label" for="karaoke">Караоке</label>
+              </div>
+              <div class="set__row">
+                <input class="set__input" type="checkbox" name="extra" value="vr" id="vr">
+                <label class="set__label" for="vr">VR</label>
+              </div>
+            </fieldset>
+
+          </fieldset>
+
+          <fieldset class="form-booking__fieldset choice">
+            <legend class="form-booking__legend">Выбери дату и время</legend>
+            <div class="choice__item">
+              <div class="date-time">
+                <label class="choice__label date-time__label">
+                  Дата <input class="choice__input date-time__input" type="date" name="date" required>
+                </label>
+                <label class="choice__label date-time__label">
+                  Время <input class="choice__input date-time__input" type="time" name="time" required>
+                </label>
+              </div>
+
+              <label class="choice__label">
+                Количество человек <input class="choice__input" type="number" name="amount" required>
+              </label>
+            </div>
+
+            <div class="choice__item">
+              <label class="choice__label">
+                Имя <input class="choice__input" type="text" name="name" required>
+              </label>
+
+              <label class="choice__label">
+                Фамилия <input class="choice__input" type="text" name="surname" required>
+              </label>
+            </div>
+
+            <div class="choice__item">
+              <label class="choice__label">
+                Телефон
+                <input class="choice__input" type="text" name="phone" required pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$" placeholder="+7___-___-__-__">
+              </label>
+
+              <label class="choice__label">
+                E-mail
+                <input class="choice__input" type="email" name="email">
+              </label>
+            </div>
+
+          </fieldset>
+
+          <button class="form-booking__submit" type="submit">Забронировать</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="title">О нас</h2>
+
+        <div class="about__info">
+          <div class="about__images">
+<!--            <img class="about__image" src="css/about/img/about-image.jpg" alt="фотография игровых пространств">-->
+            <img src="images/about-1.jpg" class="about__image_1" alt="">
+            <img src="images/about-2.jpg" class="about__image_2" alt="">
+            <img src="images/about-3.jpg" class="about__image_3" alt="">
+            <img src="images/about-4.jpg" class="about__image_4 alt="">
+            <img src="images/about-5.jpg" class="about__image_5" alt="">
+            <img src="images/about-6.jpg" class="about__image_6" alt="">
+            <img src="images/about-7.jpg" class="about__image_7" alt="">
+          </div>
+
+<!--          <div class="about__text">-->
+            <div class="about__description">
+              <p class="page__paragraph">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в&nbsp;центральной части города.</p>
+              <p class="page__paragraph">Каждый день мы стараемся создавать для&nbsp;вас&nbsp;самую лучшую игровую атмосферу и&nbsp;радовать Вас&nbsp;топовыми игровыми разработками со&nbsp;всего мира.</p>
+            </div>
+
+            <blockquote class="quote">
+              <p class="quote__paragraph"><span class="quote__name">GAME OVER &mdash;</span> это место незабываемых впечатлений</p>
+              <figure class="author">
+                <img class="author__avatar" src="css/about/img/foto-abakshin.jpg" alt="фотография Аркадия Абакшина">
+                <figcaption class="author__info"><cite class="author__cite">Аркадий Абакшин, создатель&nbsp;игровой территории&nbsp;GAME&nbsp;OVER</cite></figcaption>
+              </figure>
+            </blockquote>
+<!--          </div>-->
+        </div>
+
+      </div>
+    </section>
+
+    <section id="reviews" class="reviews">
+      <div class="container reviews__container">
+        <h2 class="title">Отзывы посетителей</h2>
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <figure class="avatar">
+              <img class="avatar__image" src="images/foto1.jpg" width="280" height="280" alt="фото Макса Самойлова">
+              <figcaption>Макс Самойлов</figcaption>
+            </figure>
+            <p class="reviews__text">Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!</p>
+          </li>
+          <li class="reviews__item">
+            <figure class="avatar">
+              <img class="avatar__image avatar__image_position_40" src="images/foto2.jpg" width="280" height="280" alt="фото Оксаны Григорьевой">
+              <figcaption>Оксана Григорьева</figcaption>
+            </figure>
+            <p class="reviews__text">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений</p>
+          </li>
+          <li class="reviews__item">
+            <figure class="avatar">
+              <img class="avatar__image avatar__image_position_center" src="images/foto3.jpg" width="280" height="280" alt="фото Никиты Ященко">
+              <figcaption>Никита Ященко</figcaption>
+            </figure>
+            <p class="reviews__text">Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+      <section id="questions" class="questions">
+        <div class="container">
+          <h2 class="title">Частые вопросы</h2>
+          <ul class="questions__list">
+            <li class="questions__item">Можно ли забронировать комнату онлайн?</li>
+            <li class="questions__item">Могут ли мне вернуть деньги за бронь?</li>
+            <li class="questions__item">Какая комната самая популярная?</li>
+            <li class="questions__item">Как получить VIP карту?</li>
+            <li class="questions__item">Какая комната самая популярная?</li>
+          </ul>
+        </div>
+      </section>
+  </main>
+
+  <footer id="contacts" class="contacts">
+    <div class="container">
+      <h2 class="title">Контакты</h2>
+      <div class="contacts__row">
+        <div class="contacts__info">
+          <address class="wrap-address">
+          <p class="wrap-address__address"><span class="address">г. Москва ул.&nbsp;Усачёва, 29&nbsp;к3</span></p>
+          <p class="wrap-address__phone"><a class="wrap-address__link" href="tel:89509302893">8 (950) 930 - 28 - 93</a></p>
+          <p class="wrap-address__email"><a class="wrap-address__link" href="mailto:GameOver@gmail.com">GameOver@gmail.com</a></p>
+          </address>
+
+          <nav class="navigation">
+            <ul class="navigation__list social">
+              <li class="social__item">
+                <a class="social__link" href="https://vk.com/" target="_blank">
+                  <svg class="social__image" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24.9999 1C11.7449 1 0.999847 11.745 0.999847 25C0.999847 38.255 11.7449 49 24.9999 49C38.2549 49 48.9999 38.255 48.9999 25C48.9999 11.745 38.2549 1 24.9999 1ZM34.2299 28.0775C34.2299 28.0775 36.3524 30.1725 36.8749 31.145C36.8899 31.165 36.8974 31.185 36.9024 31.195C37.1149 31.5525 37.1649 31.83 37.0599 32.0375C36.8849 32.3825 36.2849 32.5525 36.0799 32.5675H32.3299C32.0699 32.5675 31.5249 32.5 30.8649 32.045C30.3574 31.69 29.8574 31.1075 29.3699 30.54C28.6424 29.695 28.0124 28.965 27.3774 28.965C27.2967 28.9649 27.2165 28.9775 27.1399 29.0025C26.6599 29.1575 26.0449 29.8425 26.0449 31.6675C26.0449 32.2375 25.5949 32.565 25.2774 32.565H23.5599C22.9749 32.565 19.9274 32.36 17.2274 29.5125C13.9223 26.025 10.9473 19.03 10.9223 18.965C10.7348 18.5125 11.1223 18.27 11.5448 18.27H15.3323C15.8373 18.27 16.0023 18.5775 16.1174 18.85C16.2523 19.1675 16.7474 20.43 17.5599 21.85C18.8774 24.165 19.6849 25.105 20.3324 25.105C20.4538 25.1036 20.573 25.0727 20.6799 25.015C21.5249 24.545 21.3674 21.5325 21.3299 20.9075C21.3299 20.79 21.3274 19.56 20.8948 18.97C20.5849 18.5425 20.0574 18.38 19.7374 18.32C19.8669 18.1413 20.0375 17.9964 20.2348 17.8975C20.8148 17.6075 21.8599 17.565 22.8974 17.565H23.4749C24.5999 17.58 24.8899 17.6525 25.2974 17.755C26.1224 17.9525 26.1399 18.485 26.0674 20.3075C26.0449 20.825 26.0224 21.41 26.0224 22.1C26.0224 22.25 26.0149 22.41 26.0149 22.58C25.9899 23.5075 25.9599 24.56 26.6149 24.9925C26.7003 25.0461 26.799 25.0746 26.8999 25.075C27.1274 25.075 27.8124 25.075 29.6674 21.8925C30.2394 20.8681 30.7366 19.8037 31.1549 18.7075C31.1924 18.6425 31.3024 18.4425 31.4324 18.365C31.5283 18.3161 31.6347 18.2912 31.7424 18.2925H36.1949C36.6799 18.2925 37.0124 18.365 37.0749 18.5525C37.1849 18.85 37.0549 19.7575 35.0224 22.51L34.1149 23.7075C32.2724 26.1225 32.2724 26.245 34.2299 28.0775Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="https://web.telegram.org/" target="_blank">
+                  <svg class="social__image" width="50" height="50" viewBox="0 0 50 50" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M47.9998 24C47.9998 30.3652 45.4713 36.4697 40.9704 40.9706C36.4695 45.4714 30.365 48 23.9998 48C17.6347 48 11.5302 45.4714 7.02928 40.9706C2.52841 36.4697 -0.000152588 30.3652 -0.000152588 24C-0.000152588 17.6348 2.52841 11.5303 7.02928 7.02944C11.5302 2.52856 17.6347 0 23.9998 0C30.365 0 36.4695 2.52856 40.9704 7.02944C45.4713 11.5303 47.9998 17.6348 47.9998 24ZM24.8608 17.718C22.5268 18.69 17.8588 20.7 10.8628 23.748C9.72885 24.198 9.13185 24.642 9.07785 25.074C8.98785 25.803 9.90285 26.091 11.1478 26.484L11.6728 26.649C12.8968 27.048 14.5468 27.513 15.4018 27.531C16.1818 27.549 17.0488 27.231 18.0058 26.571C24.5428 22.158 27.9178 19.929 28.1278 19.881C28.2778 19.845 28.4878 19.803 28.6258 19.929C28.7668 20.052 28.7518 20.289 28.7368 20.352C28.6468 20.739 25.0558 24.075 23.1988 25.803C22.6198 26.343 22.2088 26.724 22.1248 26.811C21.9399 27 21.7519 27.1861 21.5608 27.369C20.4208 28.467 19.5688 29.289 21.6058 30.633C22.5868 31.281 23.3728 31.812 24.1558 32.346C25.0078 32.928 25.8598 33.507 26.9638 34.233C27.2428 34.413 27.5128 34.608 27.7738 34.794C28.7668 35.502 29.6638 36.138 30.7648 36.036C31.4068 35.976 32.0698 35.376 32.4058 33.576C33.2008 29.325 34.7638 20.118 35.1238 16.323C35.1458 16.0075 35.1327 15.6906 35.0848 15.378C35.0566 15.1258 34.9345 14.8934 34.7428 14.727C34.4699 14.5386 34.1445 14.4409 33.8128 14.448C32.9128 14.463 31.5238 14.946 24.8608 17.718Z"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="https://www.pinterest.ru/" target="_blank">
+                  <svg class="social__image" width="50" height="50" viewbox="0 0 50 50" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M25.0005 0C11.1947 0 -0.000152588 11.1936 -0.000152588 25.0006C-0.000152588 35.2378 6.15562 44.0314 14.9646 47.8981C14.8941 46.1526 14.9511 44.0558 15.3998 42.159C15.8806 40.1282 18.6165 28.5359 18.6165 28.5359C18.6165 28.5359 17.8178 26.9397 17.8178 24.5808C17.8178 20.8763 19.9652 18.1077 22.6383 18.1077C24.912 18.1077 26.0107 19.8154 26.0107 21.8609C26.0107 24.1468 24.5537 27.5635 23.8037 30.7327C23.1768 33.3859 25.1338 35.5481 27.7498 35.5481C32.4864 35.5481 35.6761 29.4647 35.6761 22.2558C35.6761 16.7782 31.9864 12.6769 25.2742 12.6769C17.6902 12.6769 12.9659 18.3321 12.9659 24.6487C12.9659 26.8282 13.6082 28.3635 14.6146 29.5513C15.0768 30.0981 15.1409 30.318 14.9736 30.9462C14.8537 31.4058 14.5781 32.5128 14.4646 32.9519C14.2986 33.5853 13.7857 33.8109 13.2127 33.5776C9.71972 32.1513 8.0928 28.3263 8.0928 24.0263C8.0928 16.9237 14.0819 8.40898 25.9601 8.40898C35.5056 8.40898 41.7877 15.316 41.7877 22.732C41.7877 32.5378 36.3351 39.8647 28.2979 39.8647C25.5998 39.8647 23.0607 38.4051 22.1909 36.7487C22.1909 36.7487 20.7396 42.5077 20.4325 43.6218C19.9024 45.5494 18.8646 47.4763 17.9159 48.9769C20.2162 49.6571 22.6024 50.0025 25.0011 50.0026C38.8063 50.0013 49.9998 38.8071 49.9998 25.0006C49.9998 11.1936 38.8063 0 25.0005 0Z"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="https://www.stumbleupon.com/" target="_blank">
+                  <svg class="social__image" width="50" height="50" viewbox="0 0 50 50" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M44.7441 9.66919C48.1583 14.0494 50.0085 19.4463 49.9999 24.9999C49.9999 38.8051 38.805 49.9999 25.0006 49.9999C15.2871 49.9999 6.86596 44.4576 2.7275 36.3647H13.6236C18.8159 36.3647 22.4429 33.566 22.4429 29.0923C22.4429 19.6108 11.5051 23.4737 11.5051 20.1089C11.5051 18.4878 12.8057 17.898 15.1858 17.898H22.7692C24.8711 17.898 27.3435 18.275 27.3435 20.5685V28.1243C27.3435 33.5955 31.6159 36.364 36.0441 36.364C40.548 36.364 44.7435 33.5955 44.7435 28.1243V9.66919H44.7441Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0005 2.43241e-05C30.0173 -0.00698868 34.919 1.50262 39.0626 4.33079V28.3013C39.0626 29.9628 37.7037 31.3224 36.0447 31.3224C34.3838 31.3224 33.0261 29.9628 33.0261 28.3013V21.1186C33.0261 15.3846 30.1242 12.9994 26.3447 12.9994H14.0441C9.59088 12.9994 5.89665 15.834 5.89665 20.3289C5.89665 22.6289 6.8819 25.9994 11.5415 26.8353C15.337 27.5186 16.8351 27.3199 16.8351 29.3506C16.8351 31.3224 14.6261 31.3224 11.7101 31.3224H0.808189C0.269676 29.2582 -0.0019826 27.1334 -0.000143311 25C-0.000143311 11.1981 11.196 2.43241e-05 25.0005 2.43241e-05Z"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="contacts__map"><img class="contacts__image" src="images/map.jpg" width="680" height="274" alt="карта"></div>
+      </div>
+      <div class="contacts__row">
+        <div class="contacts__paragraph">© Game Over, 2022</div>
+        <div>
+          <p class="contacts__paragraph contacts__paragraph_align_right">Design by Anastasia Ilina</p>
+          <p class="contacts__paragraph contacts__paragraph_align_right"><a class="contacts__link" href="mailto:ilina9825@gmail.com">ilina9825@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,5 +1,5 @@
 .all {
-  padding-bottom: 67px;
+  padding-bottom: 90px;
 }
 
 .all__title {
@@ -37,7 +37,7 @@
 
 .all__descr {
   display: flex;
-  height: 56px;
+  min-height: 56px;
 }
 
 .all__item_vr {
@@ -62,4 +62,55 @@
 
 .all__item_sony {
   background-image: url("img/sony.jpg");
+}
+
+@media(max-width: 1124px) {
+  .all {
+    padding-bottom: 78px;
+  }
+
+  .all__title {
+    max-width: 650px;
+    margin-bottom: 36px;
+  }
+
+  .all__list {
+    gap: 29px 20px;
+  }
+
+  .all__item {
+    width: 287px;
+    height: 172px;
+    padding: 5px 20px;
+  }
+
+  .all__descr {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
+@media(max-width: 1023px) {
+  .all {
+    padding-bottom: 30px;
+  }
+
+  .all__title {
+    max-width: 450px;
+    margin-bottom: 30px;
+  }
+
+  .all__list {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .all__item {
+    width: 334px;
+    height: 200px;
+  }
+
+  .all__item:nth-child(3n+2) {
+    transform: translateY(0);
+  }
 }

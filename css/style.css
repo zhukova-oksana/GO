@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 *, *:before,
@@ -56,8 +57,8 @@ h1, h2, h3, p, figure, fieldset {
 }
 
 .container {
-  max-width: 1240px;
-  padding: 0 30px;
+  max-width: 1300px;
+  padding: 0 60px;
   margin: 0 auto;
 }
 
@@ -76,4 +77,46 @@ section {
 
 .page__paragraph:not(:last-child) {
   margin-bottom: 23px;
+}
+
+@media(max-width: 1124px) {
+  body {
+    font-size: 18px;
+  }
+
+  section {
+    padding: 35px 0;
+  }
+
+  .title {
+    font-size: 30px;
+    line-height: 1.333333;
+    margin-bottom: 26px;
+  }
+
+  .page__paragraph {
+    font-size: 18px;
+    line-height: 1.3333;
+  }
+
+}
+
+@media(max-width: 1023px) {
+  body {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .container {
+    padding: 0 40px;
+  }
+
+  section {
+    padding: 30px 0;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 1.5;
+  }
 }
