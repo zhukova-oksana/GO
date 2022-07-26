@@ -278,11 +278,14 @@
 }
 
 @media(max-width: 700px) {
+  .promo__container {
+    min-height: 506px;
+  }
+
   .promo__title {
     font-size: 55px;
     letter-spacing: -0.08em;
   }
-
 }
 
 @media(max-width: 600px) {

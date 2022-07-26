@@ -16,7 +16,8 @@
 .all__item {
   display: flex;
   align-items: flex-end;
-  width: 380px;
+  width: 32%;
+  max-width: 380px;
   height: 228px;
   padding: 6px 40px;
   font-weight: 700;
@@ -119,6 +120,17 @@
 
   .all__item:nth-child(3n+2) {
     transform: translateY(0);
+  }
+}
+
+@media(max-width: 600px) {
+  .all__item {
+    width: 45%;
+    height: 140px;
+  }
+
+  .all__descr {
+    font-size: 16px;
   }
 }
 

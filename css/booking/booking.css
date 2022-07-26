@@ -140,7 +140,7 @@
   display: flex;
   justify-content: center;
   gap: 41px;
-  margin-bottom: 29px;
+  margin-bottom: 40px;
 }
 
 .choice__item {
@@ -156,6 +156,10 @@
   display: flex;
   flex-direction: column;
   gap: 6px;
+}
+
+.choice__label:last-child {
+  margin-bottom: 0;
 }
 
 .choice__input {
@@ -194,7 +198,7 @@
   line-height: 28px;
   text-transform: uppercase;
   color: var(--color-purple);
-  padding: 13px 50px;
+  padding: 13px 47px;
   margin-left: auto;
   margin-right: 99px;
   outline: none;
@@ -313,14 +317,18 @@
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 688px;
-    margin: 0 auto 27px;
-    gap: 9px;
+    margin: 0 auto 48px;
+    gap: 14px 0;
   }
 
   .choice__item {
     flex-direction: inherit;
     flex-basis: 100%;
     justify-content: space-between;
+  }
+
+  .choice__label {
+    margin-bottom: 0;
   }
 
   .form-booking__submit {
@@ -424,6 +432,10 @@
 
   .date-time__label {
     margin-bottom: 5px;
+  }
+
+  .choice__label:last-child {
+    margin-bottom: 0;
   }
 
   .choice {
