@@ -236,7 +236,7 @@
 
 @media(max-width: 1124px) {
   .booking {
-    padding: 60px 0 54px;
+    padding: 60px 0 59px;
   }
 
   .booking__title {
@@ -245,6 +245,10 @@
 
   .form-booking__legend {
     margin-bottom: 25px;
+  }
+
+  .choice__legend {
+    margin-bottom: 24px;
   }
 
   .selection__text {
@@ -277,7 +281,7 @@
 
   .choice {
     gap: 49px;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 
   .choice__input {
