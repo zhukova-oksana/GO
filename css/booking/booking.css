@@ -437,6 +437,7 @@
 
   .form-booking__submit {
     margin: 0 auto;
+    box-shadow: 0 0 10px #fff;
   }
 
   .form-booking__legend,
@@ -454,6 +455,7 @@
 @media(max-width: 480px) {
   .booking {
     padding: 33px 0;
+    overflow: hidden;
   }
 
   .booking__title {
