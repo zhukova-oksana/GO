@@ -13,7 +13,7 @@
   font-weight: 700;
   font-size: 24px;
   text-align: center;
-  margin: 0 auto 36px;
+  margin: 0 auto 35px;
 }
 
 .form-booking__label {
@@ -106,7 +106,7 @@
 .set__title {
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 18px;
+  margin-bottom: 19px;
 }
 
 .set__row {
@@ -158,14 +158,14 @@
   flex-basis: 300px;
 }
 
-.choice__item:nth-child(2) {
+.choice__item:nth-child(3) {
   flex-basis: 280px;
 }
 
 .choice__label {
   font-size: 14px;
   line-height: 1.14286;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   display: flex;
   flex-direction: column;
   gap: 5px;
