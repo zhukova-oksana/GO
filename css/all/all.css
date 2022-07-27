@@ -92,6 +92,10 @@
     transform: translateY(53px);
   }
 
+  .all__item:nth-child(3n+2):hover {
+    transform: scale(1.1);
+  }
+
   .all__descr {
     font-size: 20px;
     line-height: 1.4;
