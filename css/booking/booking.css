@@ -88,7 +88,7 @@
   max-width: 980px;
   margin-left: auto;
   margin-right: auto;
-  gap: 80px;
+  gap: 100px;
 }
 
 .set__item {
@@ -99,10 +99,14 @@
   padding: 0;
 }
 
+.set__item:nth-child(2) {
+  flex: 0 0 280px;
+}
+
 .set__title {
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .set__row {
@@ -123,9 +127,14 @@
 }
 
 .set__input {
+  width: 27px;
+  height: 27px;
+  transition-duration: .6s;
+}
+
+.set__input_type_checkbox {
   width: 25px;
   height: 25px;
-  transition-duration: .6s;
 }
 
 .set__input:focus,
@@ -139,8 +148,8 @@
 .choice {
   display: flex;
   justify-content: center;
-  gap: 41px;
-  margin-bottom: 40px;
+  gap: 49px;
+  margin-bottom: 38px;
 }
 
 .choice__item {
@@ -149,13 +158,17 @@
   flex-basis: 300px;
 }
 
+.choice__item:nth-child(2) {
+  flex-basis: 280px;
+}
+
 .choice__label {
   font-size: 14px;
   line-height: 1.14286;
   margin-bottom: 14px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 5px;
 }
 
 .choice__label:last-child {
@@ -163,7 +176,7 @@
 }
 
 .choice__input {
-  padding: 9px 18px;
+  padding: 10px 18px;
   font-size: 18px;
   line-height: 1.555556;
   border: 2px solid var(--color-white);
@@ -231,7 +244,7 @@
   }
 
   .form-booking__legend {
-    margin-bottom: 22px;
+    margin-bottom: 25px;
   }
 
   .selection__text {
@@ -243,15 +256,32 @@
 
   .set {
     gap: 40px;
+    margin-bottom: 55px;
+  }
+
+  .set__legend {
+    margin-bottom: 20px;
   }
 
   .set__item {
-    flex: 0 0 280px;
+    flex: 1 0 255px;
+  }
+
+  .set__item:nth-child(3) {
+    flex: 0 0 289px;
+  }
+
+  .set__row {
+    margin-bottom: 21px;
   }
 
   .choice {
-    gap: 43px;
+    gap: 49px;
     margin-bottom: 50px;
+  }
+
+  .choice__input {
+    padding: 10px 15px;
   }
 
   .form-booking__submit {
@@ -264,7 +294,7 @@
 
 @media(max-width: 1023px) {
   .booking {
-    padding: 50px 0;
+    padding: 48px 0 50px;
   }
 
   .booking__title {
@@ -277,7 +307,7 @@
   }
 
   .form-booking__legend {
-    margin-bottom: 27px;
+    margin-bottom: 30px;
   }
 
   .selection {
@@ -290,18 +320,35 @@
     padding: 7px 20px 6px;
     font-size: 16px;
     width: 150px;
+    border-radius: 6px;
   }
 
   .set {
     flex-wrap: wrap;
     justify-content: left;
-    margin: 0 auto 50px;
+    margin: 0 auto 49px;
     max-width: 688px;
     gap: 30px 64px;
   }
 
+  .set__legend {
+    margin-bottom: 27px;
+  }
+
+  .set__title {
+    margin-bottom: 24px;
+  }
+
+  .set__row {
+    margin-bottom: 20px;
+  }
+
   .set__item {
     flex: 0 0 301px
+  }
+
+  .set__item:nth-child(2) {
+    flex: 0 0 303px;
   }
 
   .set__input {
@@ -321,14 +368,22 @@
     gap: 14px 0;
   }
 
-  .choice__item {
+  .choice__legend {
+    margin-bottom: 8px;
+  }
+
+  .choice__item:nth-child(2) {
     flex-direction: inherit;
     flex-basis: 100%;
     justify-content: space-between;
   }
 
+  .choice__item:nth-child(3) {
+    flex-basis: 280px;
+  }
+
   .choice__label {
-    margin-bottom: 0;
+    margin-bottom: 15px;
   }
 
   .form-booking__submit {
@@ -340,10 +395,26 @@
 
   .choice__input {
     width: 300px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .choice__input_type_number {
+    width: 300px;
+  }
+
+  .choice__input_type_width {
+    width: 280px;
+  }
+
+  .date-time {
+    gap: 15px;
+    margin-bottom: 14px;
   }
 
   .date-time__input {
     width: 134px;
+    padding: 9px 10px;
   }
 }
 
@@ -402,7 +473,12 @@
   }
 
   .set {
-    margin-bottom: 40px;
+    margin-bottom: 33px;
+    gap: 26px 64px;
+  }
+
+  .set__legend {
+    margin-bottom: 16px;
   }
 
   .set__row {
@@ -410,7 +486,7 @@
   }
 
   .set__title {
-    margin-bottom: 15px;
+    margin-bottom: 13px;
   }
 
   .set__input {
@@ -418,8 +494,27 @@
     height: 30px;
   }
 
+  .set__label {
+    font-size: 16px;
+    padding-top: 7px;
+  }
+
+  .set__item:nth-child(3) .set__row:not(:last-child),
+  .set__item:nth-child(4) .set__row:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
   .date-time {
     gap: 11px;
+  }
+
+  .choice {
+    gap: 10px 0;
+    margin-bottom: 37px;
+  }
+
+  .choice__legend {
+    margin-bottom: 4px;
   }
 
   .choice__input {
@@ -438,12 +533,12 @@
     margin-bottom: 0;
   }
 
-  .choice {
-    margin-bottom: 35px;
-  }
-
   .choice__item {
     gap: 0;
+  }
+
+  .choice__item:nth-child(3) {
+    margin-bottom: 26px;
   }
 
   .form-booking__submit {

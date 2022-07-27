@@ -1,9 +1,9 @@
 .reviews__container {
-  max-width: 1103px;
+  max-width: 1102px;
 }
 
 .reviews__title {
-  margin-bottom: 49px;
+  margin-bottom: 46px;
 }
 
 .reviews__list {
@@ -56,10 +56,14 @@
 
 .reviews__text {
   max-width: 680px;
-  padding: 50px 0 0 0;
+  padding: 52px 0 0 0;
 }
 
 @media(max-width: 1124px) {
+  .reviews {
+    padding-bottom: 33px;
+  }
+
   .reviews__title {
     margin-bottom: 26px;
   }
@@ -67,7 +71,7 @@
   .reviews__list {
     max-width: 703px;
     margin: 0 auto;
-    gap: 40px;
+    gap: 43px;
   }
 
   .reviews__item {
@@ -94,8 +98,12 @@
 }
 
 @media(max-width: 1023px) {
+  .reviews {
+    padding-bottom: 30px;
+  }
+
   .reviews__title {
-    margin-bottom: 30px;
+    margin-bottom: 34px;
   }
 
   .reviews__list {

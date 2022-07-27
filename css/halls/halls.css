@@ -3,7 +3,7 @@
 }
 
 .halls__title {
-  margin-bottom: 46px;
+  margin-bottom: 43px;
 }
 
 .list-halls {
@@ -15,7 +15,7 @@
 .list-halls__item {
   display: flex;
   align-items: center;
-  width: 49%;
+  width: 49.2%;
   max-width: 580px;
   height: 349px;
   justify-content: center;
@@ -72,6 +72,7 @@
   }
 
   .halls__title {
+    gap: 17px 20px;
     margin-bottom: 35px;
   }
 
@@ -80,6 +81,7 @@
     height: 200px;
     font-size: 40px;
     line-height: 1.25;
+    padding-top: 22px;
   }
 }
 

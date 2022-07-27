@@ -100,13 +100,17 @@
 
 @media(max-width: 1124px) {
   .questions__item:not(:last-child) {
-    margin-bottom: 17px;
+    margin-bottom: 16px;
   }
 }
 
 @media(max-width: 1023px) {
   .questions {
     padding-top: 23px;
+  }
+
+  .questions__title {
+    margin-bottom: 25px;
   }
 
   .questions__item {
@@ -134,11 +138,19 @@
 
 @media(max-width: 480px) {
   .questions {
-    padding-top: 48px;
+    padding-top: 34px;
+  }
+
+  .questions__title {
+    margin-bottom: 14px;
+  }
+
+  .questions__item {
+    padding: 8px 13px 7px 10px;
   }
 
   .questions__item:not(:last-child) {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
 
   .questions__item:after {

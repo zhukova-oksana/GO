@@ -72,7 +72,7 @@ section {
   line-height: 1.25;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 44px;
+  margin-bottom: 45px;
 }
 
 .page__paragraph:not(:last-child) {
@@ -121,6 +121,16 @@ section {
   .title {
     font-size: 24px;
     line-height: 1.5;
+    margin-bottom: 31px;
+  }
+
+  .page__paragraph {
+    font-size: 16px;
+    line-height: 1.375;
+  }
+
+  .page__paragraph:not(:last-child) {
+    margin-bottom: 24px;
   }
 }
 
@@ -146,5 +156,9 @@ section {
 
   .page__paragraph {
     font-size: 12px;
+  }
+
+  .page__paragraph:not(:last-child) {
+    margin-bottom: 16px;
   }
 }

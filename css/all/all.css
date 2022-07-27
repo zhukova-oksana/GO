@@ -4,7 +4,7 @@
 
 .all__title {
   max-width: 850px;
-  margin: 0 auto 40px;
+  margin: 0 auto 43px;
 }
 
 .all__list {
@@ -16,7 +16,7 @@
 .all__item {
   display: flex;
   align-items: flex-end;
-  width: 32%;
+  width: 32.3%;
   max-width: 380px;
   height: 228px;
   padding: 6px 40px;
@@ -27,7 +27,7 @@
 }
 
 .all__item:nth-child(3n+2) {
-  transform: translateY(77px);
+  transform: translateY(69px);
 }
 
 .all__item:hover {
@@ -70,7 +70,7 @@
 @media(max-width: 1124px) {
   .all {
     padding-bottom: 88px;
-    padding-top: 40px;
+    padding-top: 48px;
   }
 
   .all__title {
@@ -79,7 +79,7 @@
   }
 
   .all__list {
-    gap: 29px 20px;
+    gap: 29px 21px;
   }
 
   .all__item {
@@ -101,6 +101,7 @@
 @media(max-width: 1023px) {
   .all {
     padding-bottom: 30px;
+    padding-top: 40px;
   }
 
   .all__title {
@@ -114,8 +115,9 @@
   }
 
   .all__item {
-    width: 48%;
+    width: 48.4%;
     height: 200px;
+    padding: 11px 29px;
   }
 
   .all__item:nth-child(3n+2) {
@@ -136,12 +138,12 @@
 
 @media(max-width: 480px) {
   .all {
-    padding-top: 30px;
-    padding-bottom: 15px;
+    padding-top: 32px;
+    padding-bottom: 17px;
   }
 
   .all__title {
-    margin-bottom: 19px;
+    margin-bottom: 16px;
   }
 
   .all__list {
@@ -149,7 +151,7 @@
   }
 
   .all__item {
-    max-width: 135px;
+    min-width: 135px;
     height: 75px;
     padding: 10px 10px 3px;
   }
