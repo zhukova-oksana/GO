@@ -226,7 +226,7 @@
 
   .about__info {
     grid-template-columns: 382px auto;
-    grid-template-rows: 232px 187px;
+    /*grid-template-rows: 162px 218px;*/
     gap: 0 28px;
   }
 
@@ -276,7 +276,7 @@
   .quote__paragraph {
     padding-left: 22px;
     margin-bottom: 23px;
-    max-width: 80%;
+    max-width: 90%;
   }
 }
 
