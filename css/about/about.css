@@ -226,7 +226,7 @@
 
   .about__info {
     grid-template-columns: 382px auto;
-    /*grid-template-rows: 162px 218px;*/
+    grid-template-rows: 162px 218px;
     gap: 0 28px;
   }
 
@@ -280,7 +280,7 @@
   }
 }
 
-@media(max-width: 850px) {
+@media(max-width: 920px) {
   .about__info {
     grid-template-columns: 382px auto;
     grid-template-rows: 380px 184px;
@@ -300,6 +300,10 @@
   .quote {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
+  }
+
+  .quote__paragraph {
+    width: 82%;
   }
 }
 
@@ -394,5 +398,6 @@
   .quote__paragraph {
     padding-left: 16px;
     margin-bottom: 8px;
+    width: 100%;
   }
 }
