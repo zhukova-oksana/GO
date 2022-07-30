@@ -45,6 +45,12 @@
   background-image: url("img/hall-4.jpg");
 }
 
+@media(max-width: 1300px) {
+  .list-halls__item {
+    width: 48%;
+  }
+}
+
 @media(max-width: 1124px) {
   .halls {
     padding-bottom: 70px;

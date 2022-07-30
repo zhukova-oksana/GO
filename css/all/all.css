@@ -67,6 +67,12 @@
   background-image: url("img/sony.jpg");
 }
 
+@media(max-width: 1300px) {
+  .all__item {
+    width: 32%;
+  }
+}
+
 @media(max-width: 1124px) {
   .all {
     padding-bottom: 88px;
