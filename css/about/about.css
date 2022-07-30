@@ -131,6 +131,12 @@
   font-style: normal;
 }
 
+@media(max-width: 1300px) {
+  .about__info {
+    gap: 0 39px;
+  }
+}
+
 @media(max-width: 1124px) {
   .about {
     padding-top: 72px;
@@ -220,6 +226,7 @@
 
   .about__info {
     grid-template-columns: 382px auto;
+    grid-template-rows: 232px 187px;
     gap: 0 28px;
   }
 
