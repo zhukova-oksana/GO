@@ -9,6 +9,8 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/index.css">
+
+  <script src="script/script.js" type="module"></script>
 </head>
 <body class="page">
   <header class="header">
@@ -285,11 +287,36 @@
         <div class="container">
           <h2 class="title questions__title">Частые вопросы</h2>
           <ul class="questions__list">
-            <li class="questions__item">Можно ли забронировать комнату онлайн?</li>
-            <li class="questions__item">Могут ли мне вернуть деньги за бронь?</li>
-            <li class="questions__item">Какая комната самая популярная?</li>
-            <li class="questions__item">Как получить VIP карту?</li>
-            <li class="questions__item">Какая комната самая популярная?</li>
+            <li class="questions__item">
+              <button class="questions__button">Можно ли забронировать комнату онлайн?</button>
+              <div class="questions__information questions__information_visible">
+                <p class="questions__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату, позвонив по телефону 8 (999) 958 - 48 - 38</p>
+              </div>
+            </li>
+            <li class="questions__item">
+              <button class="questions__button">Могут ли мне вернуть деньги за бронь?</button>
+              <div class="questions__information questions__information_visible">
+                <p class="questions__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату, позвонив по телефону 8 (999) 958 - 48 - 38</p>
+              </div>
+            </li>
+            <li class="questions__item">
+              <button class="questions__button">Какая комната самая популярная?</button>
+              <div class="questions__information questions__information_visible">
+                <p class="questions__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату, позвонив по телефону 8 (999) 958 - 48 - 38</p>
+              </div>
+            </li>
+            <li class="questions__item">
+              <button class="questions__button">Как получить VIP карту?</button>
+              <div class="questions__information questions__information_visible">
+                <p class="questions__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату, позвонив по телефону 8 (999) 958 - 48 - 38</p>
+              </div>
+            </li>
+            <li class="questions__item">
+              <button class="questions__button">Какая комната самая популярная?</button>
+              <div class="questions__information questions__information_visible">
+                <p class="questions__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату, позвонив по телефону 8 (999) 958 - 48 - 38</p>
+              </div>
+            </li>
           </ul>
         </div>
       </section>
@@ -351,6 +378,36 @@
       </div>
     </div>
   </footer>
+
+  <div class="overlay"></div>
+  <div class="modal">
+    <a href="#" class="modal__close">
+      <svg class="modal__image" width="42" height="42" viewBox="0 0 42 42" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <rect y="38.4407" width="54.3632" height="5.03363" rx="2" transform="rotate(-45 0 38.4407)"/>
+        <rect x="3.55957" width="54.3632" height="5.03363" rx="2" transform="rotate(45 3.55957 0)"/>
+      </svg>
+    </a>
+    <div class="modal__container">
+      <div class="modal__title">Заказать звонок</div>
+      <form class="request-call" method="post" name="request-call">
+        <fieldset class="request-call__fieldset">
+          <div class="request-call__item">
+            <label class="request-call__label" for="name">Имя</label>
+            <input class="request-call__input" type="text" name="name" id="name" required>
+          </div>
+
+          <div class="request-call__item">
+            <label class="request-call__label" for="phone">Телефон</label>
+            <input class="request-call__input" type="tel" name="phone" id="phone" pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$" placeholder="+7___-___-__-__" required>
+          </div>
+        </fieldset>
+
+        <div class="request-call__button">
+          <button class="button" type="submit">Позвонить мне</button>
+        </div>
+      </form>
+    </div>
+  </div>
 
 </body>
 </html>
