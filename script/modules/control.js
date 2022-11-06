@@ -31,7 +31,7 @@ const modalControl = () => {
       closeModal();
     }
   });
-}
+};
 
 const accordionControl = () => {
   const buttons = document.querySelectorAll('.questions__button');
@@ -61,9 +61,51 @@ const accordionControl = () => {
       }
     });
   });
+};
+
+const duration = 1000;
+const distance = 500;
+let requestId = NaN;
+const buttonAnimation = (duration, callback) => {
+  let buttonAnimmation = NaN;
+
+  requestId = requestAnimationFrame(function step(timestamp) {
+    buttonAnimmation ||= timestamp;
+
+    const progress = (timestamp - buttonAnimmation) / duration;
+
+    callback(progress);
+    if (progress < 1) {
+      requestId = requestAnimationFrame(step);
+    }
+  });
+};
+
+const menuControl = () => {
+  const buttonMenu = document.querySelector('.menu-button');
+  const navigation = document.querySelector('.navigation__list');
+  const linksMenu = document.querySelectorAll('.navigation__link');
+  const listMenu = document.querySelector('.navigation__list');
+
+  buttonMenu.addEventListener('click', e => {
+    buttonMenu.classList.toggle('menu-button_active');
+    buttonAnimation(duration, (progress) => {
+      const left = progress * document.documentElement.scrollWidth;
+      listMenu.style.transform = `translateX(${left}px)`;
+    })
+    navigation.classList.toggle('navigation__list_active');
+  });
+
+  linksMenu.forEach((link) => {
+    link.addEventListener('click', () => {
+      navigation.classList.remove('navigation__list_active');
+      buttonMenu.classList.toggle('menu-button_active');
+    });
+  });
 }
 
 export default {
   modalControl,
-  accordionControl
+  accordionControl,
+  menuControl
 }

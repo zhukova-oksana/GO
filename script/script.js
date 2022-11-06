@@ -2,12 +2,14 @@ import control from './modules/control.js';
 
 const {
   modalControl,
-  accordionControl
+  accordionControl,
+  menuControl
 } = control;
 
 const init = () => {
   modalControl();
   accordionControl();
+  menuControl();
 }
 
 init();
