@@ -1,15 +1,22 @@
 const modalControl = () => {
+  const body = document.body;
   const button = document.querySelector('.header__button');
   const buttonClose = document.querySelector('.modal__close');
   const overlay = document.querySelector('.overlay');
   const modal = document.querySelector('.modal');
 
+  const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+
   const openModal = () => {
+    body.classList.add('show-modal');
+    body.style.paddingRight = `${scrollBarWidth}px`;
     overlay.classList.add('overlay_visible');
     modal.classList.add('modal_visible');
   }
 
   const closeModal = () => {
+    body.classList.remove('show-modal');
+    body.style.paddingRight = `0px`;
     overlay.classList.remove('overlay_visible');
     modal.classList.remove('modal_visible');
   }
