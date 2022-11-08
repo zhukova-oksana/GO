@@ -16,8 +16,8 @@ body {
   font-size: 20px;
   line-height: 1.4;
   font-weight: 400;
-  background-color: #1B1A1B;
-  color: #FFFFFF;
+  background-color: var(--color-grey);
+  color: var(--color-white);
 }
 
 img {

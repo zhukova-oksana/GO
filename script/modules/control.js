@@ -63,8 +63,7 @@ const accordionControl = () => {
   });
 };
 
-const duration = 1000;
-const distance = 500;
+const duration = 800;
 let requestId = NaN;
 const buttonAnimation = (duration, callback) => {
   let buttonAnimmation = NaN;
@@ -90,9 +89,13 @@ const menuControl = () => {
   buttonMenu.addEventListener('click', e => {
     buttonMenu.classList.toggle('menu-button_active');
     buttonAnimation(duration, (progress) => {
-      const left = progress * document.documentElement.scrollWidth;
-      listMenu.style.transform = `translateX(${left}px)`;
-    })
+      const left = progress * document.documentElement.clientWidth;
+      if (left > window.innerWidth) {
+        listMenu.style.transform = `translateX(100%)`;
+      } else {
+        listMenu.style.transform = `translateX(${left}px)`;
+      }
+    });
     navigation.classList.toggle('navigation__list_active');
   });
 

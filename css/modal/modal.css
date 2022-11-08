@@ -127,9 +127,11 @@
   color: var(--color-purple);
   padding: 13px 20px;
   width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
   outline: none;
   transition: background-color 1s ease-in-out, border-color .6s ease-in-out;
-  box-shadow: 0 0 20px #fff;
+  box-shadow: 0 0 20px var(--color-white);
 }
 
 .button:hover {
@@ -145,4 +147,39 @@
 .button:active {
   background-color: var(--color-light);
   border-color: var(--color-light);
+}
+
+
+@media(max-width: 450px) {
+  .modal__image {
+    width: 30px;
+    height: 30px;
+  }
+
+  .modal__container {
+    width: 240px;
+  }
+
+  .request-call__item {
+    width: 200px;
+  }
+
+  .button {
+    font-size: 18px;
+    max-width: 240px;
+  }
+}
+@media (max-width: 1000px) and (orientation:landscape) {
+  .modal_visible {
+    top: 10px;
+    transform: translate(-50%, 0%);
+    max-height: calc(100vh - 20px);
+  }
+
+  .modal__container {
+    width: 100%;
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+    padding-bottom: 30px;
+  }
 }
