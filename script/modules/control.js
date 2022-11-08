@@ -70,15 +70,16 @@ const accordionControl = () => {
   });
 };
 
-const duration = 800;
+const duration = 600;
 let requestId = NaN;
-const buttonAnimation = (duration, callback) => {
-  let buttonAnimmation = NaN;
+
+const startAnimation = (duration, callback) => {
+  let startAnimation = NaN;
 
   requestId = requestAnimationFrame(function step(timestamp) {
-    buttonAnimmation ||= timestamp;
+    startAnimation ||= timestamp;
 
-    const progress = (timestamp - buttonAnimmation) / duration;
+    const progress = (timestamp - startAnimation) / duration;
 
     callback(progress);
     if (progress < 1) {
@@ -91,37 +92,33 @@ const menuControl = () => {
   const buttonMenu = document.querySelector('.menu-button');
   const navigation = document.querySelector('.navigation__list');
   const linksMenu = document.querySelectorAll('.navigation__link');
-  const listMenu = document.querySelector('.navigation__list');
+  const button = document.querySelector('.header__button');
 
-  const closeMenu = () => {
-    navigation.classList.remove('navigation__list_active');
-    buttonMenu.classList.remove('menu-button_active');
-  }
-
-
-
-  buttonMenu.addEventListener('click', e => {
+  const classControl = () => {
     buttonMenu.classList.toggle('menu-button_active');
     navigation.classList.toggle('navigation__list_active');
-    buttonAnimation(duration, (progress) => {
+  }
+
+  buttonMenu.addEventListener('click', () => {
+    classControl();
+    startAnimation(duration, (progress) => {
       const left = progress * document.documentElement.clientWidth;
       if (left > window.innerWidth) {
-        listMenu.style.transform = `translateX(100%)`;
+        navigation.style.transform = `translateX(100%)`;
       } else {
-        listMenu.style.transform = `translateX(${left}px)`;
+        navigation.style.transform = `translateX(${left}px)`;
       }
     });
-
   });
 
   linksMenu.forEach((link) => {
     link.addEventListener('click', () => {
-      closeMenu();
+      classControl();
     });
   });
 
-  navigation.addEventListener('click', () => {
-    closeMenu();
+  button.addEventListener('click', () => {
+    classControl();
   });
 }
 
