@@ -93,8 +93,16 @@ const menuControl = () => {
   const linksMenu = document.querySelectorAll('.navigation__link');
   const listMenu = document.querySelector('.navigation__list');
 
+  const closeMenu = () => {
+    navigation.classList.remove('navigation__list_active');
+    buttonMenu.classList.remove('menu-button_active');
+  }
+
+
+
   buttonMenu.addEventListener('click', e => {
     buttonMenu.classList.toggle('menu-button_active');
+    navigation.classList.toggle('navigation__list_active');
     buttonAnimation(duration, (progress) => {
       const left = progress * document.documentElement.clientWidth;
       if (left > window.innerWidth) {
@@ -103,14 +111,17 @@ const menuControl = () => {
         listMenu.style.transform = `translateX(${left}px)`;
       }
     });
-    navigation.classList.toggle('navigation__list_active');
+
   });
 
   linksMenu.forEach((link) => {
     link.addEventListener('click', () => {
-      navigation.classList.remove('navigation__list_active');
-      buttonMenu.classList.toggle('menu-button_active');
+      closeMenu();
     });
+  });
+
+  navigation.addEventListener('click', () => {
+    closeMenu();
   });
 }
 
