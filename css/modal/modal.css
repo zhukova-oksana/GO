@@ -175,7 +175,7 @@
   .modal_visible {
     top: 10px;
     transform: translate(-50%, 0%);
-    max-height: 498px;
+    max-height: calc(100vh - 20px);
   }
 
   .modal__container {
