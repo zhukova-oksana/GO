@@ -95,6 +95,7 @@ const menuControl = () => {
   const buttonMenu = document.querySelector('.menu-button');
   const navigation = document.querySelector('.navigation__list');
   const linksMenu = document.querySelectorAll('.navigation__link');
+  const button = document.querySelector('.header__button_nav');
 
   const classControl = () => {
     buttonMenu.classList.toggle('menu-button_active');
@@ -119,6 +120,10 @@ const menuControl = () => {
       classControl();
       overlay.classList.remove('overlay_visible');
     });
+  });
+
+  button.addEventListener('click', e => {
+    classControl();
   });
 
   overlay.addEventListener('click', e => {

@@ -285,7 +285,7 @@
 
   .wrap-address__phone:before {
     position: absolute;
-    left: 10px;
+    left: 0;
   }
   .wrap-address__email:before {
     position: absolute;
