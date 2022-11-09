@@ -143,12 +143,12 @@
   }
 
   .header__logo {
-    z-index: 100;
+    z-index: 101;
   }
 
   .menu-button {
     display: flex;
-    z-index: 100;
+    z-index: 102;
   }
 
   .menu-button:before,
@@ -179,7 +179,7 @@
   .navigation__list_active {
     display: block;
     position: absolute;
-    z-index: 99;
+    z-index: 101;
     padding: 107px 0 59px;
     top: 0;
     left: -100%;

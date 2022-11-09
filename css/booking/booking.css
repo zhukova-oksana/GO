@@ -453,6 +453,19 @@
   }
 }
 
+@media(max-width: 600px) {
+  .choice {
+    max-width: 320px;
+  }
+  .date-time {
+    flex: 1 1 auto;
+    max-width: 300px;
+  }
+  .choice__input_type_width {
+    width: 300px;
+  }
+}
+
 @media(max-width: 480px) {
   .booking {
     padding: 33px 0;

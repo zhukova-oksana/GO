@@ -89,6 +89,7 @@ const startAnimation = (duration, callback) => {
 };
 
 const menuControl = () => {
+  const overlay = document.querySelector('.overlay');
   const buttonMenu = document.querySelector('.menu-button');
   const navigation = document.querySelector('.navigation__list');
   const linksMenu = document.querySelectorAll('.navigation__link');
@@ -101,6 +102,7 @@ const menuControl = () => {
 
   buttonMenu.addEventListener('click', () => {
     classControl();
+    overlay.classList.toggle('overlay_visible');
     startAnimation(duration, (progress) => {
       const left = progress * document.documentElement.clientWidth;
       if (left > window.innerWidth) {
@@ -114,11 +116,22 @@ const menuControl = () => {
   linksMenu.forEach((link) => {
     link.addEventListener('click', () => {
       classControl();
+      overlay.classList.remove('overlay_visible');
     });
   });
 
   button.addEventListener('click', () => {
     classControl();
+    // overlay.classList.remove('overlay_visible');
+  });
+
+  overlay.addEventListener('click', e => {
+    const target = e.target;
+    if (target.closest('.overlay')) {
+      buttonMenu.classList.toggle('menu-button_active');
+      navigation.classList.toggle('navigation__list_active');
+      overlay.classList.remove('overlay_visible');
+    }
   });
 }
 
