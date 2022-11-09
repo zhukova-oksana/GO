@@ -1,6 +1,6 @@
 const modalControl = () => {
   const body = document.body;
-  const button = document.querySelector('.header__button');
+  const buttons = document.querySelectorAll('.header__button');
   const buttonClose = document.querySelector('.modal__close');
   const overlay = document.querySelector('.overlay');
   const modal = document.querySelector('.modal');
@@ -21,8 +21,10 @@ const modalControl = () => {
     modal.classList.remove('modal_visible');
   }
 
-  button.addEventListener('click', e => {
-    openModal();
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        openModal();
+    });
   });
 
   buttonClose.addEventListener('click', e => {
@@ -93,7 +95,6 @@ const menuControl = () => {
   const buttonMenu = document.querySelector('.menu-button');
   const navigation = document.querySelector('.navigation__list');
   const linksMenu = document.querySelectorAll('.navigation__link');
-  const button = document.querySelector('.header__button');
 
   const classControl = () => {
     buttonMenu.classList.toggle('menu-button_active');
@@ -120,23 +121,17 @@ const menuControl = () => {
     });
   });
 
-  button.addEventListener('click', () => {
-    classControl();
-    // overlay.classList.remove('overlay_visible');
-  });
-
   overlay.addEventListener('click', e => {
     const target = e.target;
     if (target.closest('.overlay')) {
-      buttonMenu.classList.toggle('menu-button_active');
-      navigation.classList.toggle('navigation__list_active');
+      classControl();
       overlay.classList.remove('overlay_visible');
     }
   });
-}
+};
 
 export default {
   modalControl,
   accordionControl,
-  menuControl
+  menuControl,
 }
